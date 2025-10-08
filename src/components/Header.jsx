@@ -10,6 +10,7 @@ const Header = () => {
     { name: 'Home', href: '/' },
     { name: 'Events', href: '/events' },
     { name: 'Testimonials', href: '/testimonials' },
+    { name: 'Partners', href: '/partners' },
     { name: 'Contact', href: '/contact' },
   ]
 
