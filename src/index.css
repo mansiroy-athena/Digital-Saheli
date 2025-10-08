@@ -1,46 +1,22 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
-@theme {
-  --color-primary-50: #FEEBF2;
-  --color-primary-100: #FDD3E0;
-  --color-primary-200: #FBBAD0;
-  --color-primary-300: #F891BB;
-  --color-primary-400: #F35F9E;
-  --color-primary-500: #D82070;
-  --color-primary-600: #C21C65;
-  --color-primary-700: #A61857;
-  --color-primary-800: #8B1449;
-  --color-primary-900: #70103B;
-  
-  --color-secondary-50: #EBF2F2;
-  --color-secondary-100: #D3E0E0;
-  --color-secondary-200: #BBD0D0;
-  --color-secondary-300: #91BBBB;
-  --color-secondary-400: #5F9E9E;
-  --color-secondary-500: #208080;
-  --color-secondary-600: #1C7373;
-  --color-secondary-700: #186464;
-  --color-secondary-800: #145555;
-  --color-secondary-900: #104646;
-  
-  --font-family-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
-}
-
 @layer base {
   body {
-    font-family: var(--font-family-sans);
+    font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
   }
 }
 
 @layer components {
   .btn {
-    @apply inline-block px-6 py-3 bg-primary-500 text-white font-medium rounded-lg transition-all duration-300 hover:bg-primary-600 hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2;
+    @apply inline-block px-6 py-3 bg-pink-500 text-white font-medium rounded-lg transition-all duration-300 hover:bg-pink-600 hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-offset-2;
   }
   
   .btn-secondary {
-    @apply bg-secondary-500 hover:bg-secondary-600 focus:ring-secondary-500;
+    @apply bg-teal-500 hover:bg-teal-600 focus:ring-teal-500;
   }
   
   .card {
