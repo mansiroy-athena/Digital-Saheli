@@ -122,21 +122,6 @@ const EventsPage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             {/* Maya Aunty Story */}
             <div className="bg-gradient-to-br from-primary-50 to-primary-100 rounded-2xl p-8 border border-primary-200">
-              <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
-                {/* Maya's Image */}
-                <div className="lg:col-span-1">
-                  <div className="relative">
-                    <img 
-                      src={mayaImage} 
-                      alt="Maya Aunty - The First Digital Saheli" 
-                      className="w-full h-80 object-cover rounded-xl shadow-lg"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-xl"></div>
-                  </div>
-                </div>
-                
-                {/* Content */}
-                <div className="lg:col-span-2">
               <div className="flex items-center mb-6">
                 <div className="w-16 h-16 bg-primary-600 rounded-full flex items-center justify-center mr-4">
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -156,15 +141,13 @@ const EventsPage = () => {
                 
                 <div className="bg-white rounded-lg p-4 border-l-4 border-primary-600">
                   <p className="text-gray-700 font-medium">
-                        "Digital Saheli worked with Maya to build her Instagram presence, create reels telling her story, and connect her to a wider audience. Within months, her online engagement and sales increased significantly, allowing her to support more patients. Maya became the first official "Digital Saheli" and a living testament to the power of digital literacy in driving social impact."
+                    "Digital Saheli worked with Maya to build her Instagram presence, create reels telling her story, and connect her to a wider audience. Within months, her online engagement and sales increased significantly, allowing her to support more patients. Maya became the first official "Digital Saheli" and a living testament to the power of digital literacy in driving social impact."
                   </p>
                 </div>
                 
                 <p className="text-gray-700 leading-relaxed">
                   Maya became the first official "Digital Saheli" and a living testament to the power of digital literacy in driving social impact.
                 </p>
-                  </div>
-                </div>
               </div>
             </div>
 
