@@ -9,8 +9,8 @@ const Header = () => {
   const navigation = [
     { name: 'Home', href: '/' },
     { name: 'Events', href: '/events' },
-    { name: 'Testimonials', href: '/testimonials' },
     { name: 'Partners', href: '/partners' },
+    { name: 'Testimonials', href: '/testimonials' },
     { name: 'Contact', href: '/contact' },
   ]
 
@@ -54,15 +54,7 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* CTA Button */}
-          <div className="hidden md:flex items-center space-x-4">
-            <Link
-              to="/contact"
-              className="btn"
-            >
-              Get Started
-            </Link>
-          </div>
+
 
           {/* Mobile menu button */}
           <div className="md:hidden">
@@ -102,15 +94,7 @@ const Header = () => {
                   {item.name}
                 </Link>
               ))}
-              <div className="pt-4">
-                <Link
-                  to="/contact"
-                  className="btn w-full text-center"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  Get Started
-                </Link>
-              </div>
+              
             </div>
           </div>
         )}

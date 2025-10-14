@@ -1,191 +1,206 @@
 import React from 'react'
 
 const ProjectPartnersPage = () => {
-  const partners = [
-    {
-      name: "Tech for Good Foundation",
-      description: "A non-profit organization dedicated to using technology to solve social challenges and empower communities.",
-      logo: "https://via.placeholder.com/200x100/4F46E5/FFFFFF?text=Tech+for+Good",
-      website: "https://techforgood.org",
-      focus: "Digital Literacy & Education"
-    },
-    {
-      name: "Women in Tech Initiative",
-      description: "Supporting women's advancement in technology through mentorship, training, and networking opportunities.",
-      logo: "https://via.placeholder.com/200x100/EC4899/FFFFFF?text=Women+in+Tech",
-      website: "https://womenintech.org",
-      focus: "Gender Equality in Tech"
-    },
-    {
-      name: "Digital Empowerment Network",
-      description: "Building digital skills and access to technology for underserved communities across the region.",
-      logo: "https://via.placeholder.com/200x100/10B981/FFFFFF?text=Digital+Empowerment",
-      website: "https://digitalempowerment.net",
-      focus: "Community Development"
-    },
-    {
-      name: "Innovation Hub",
-      description: "A collaborative space fostering innovation and entrepreneurship in the digital space.",
-      logo: "https://via.placeholder.com/200x100/F59E0B/FFFFFF?text=Innovation+Hub",
-      website: "https://innovationhub.com",
-      focus: "Innovation & Entrepreneurship"
-    },
-    {
-      name: "Education First Foundation",
-      description: "Promoting quality education and digital learning opportunities for all students.",
-      logo: "https://via.placeholder.com/200x100/8B5CF6/FFFFFF?text=Education+First",
-      website: "https://educationfirst.org",
-      focus: "Educational Technology"
-    },
-    {
-      name: "Community Connect",
-      description: "Connecting communities through technology and fostering digital inclusion initiatives.",
-      logo: "https://via.placeholder.com/200x100/EF4444/FFFFFF?text=Community+Connect",
-      website: "https://communityconnect.org",
-      focus: "Community Engagement"
-    }
-  ]
-
-  const sponsors = [
-    {
-      name: "Microsoft",
-      logo: "https://via.placeholder.com/150x75/00BCF2/FFFFFF?text=Microsoft",
-      level: "Platinum Sponsor"
-    },
-    {
-      name: "Google",
-      logo: "https://via.placeholder.com/150x75/4285F4/FFFFFF?text=Google",
-      level: "Gold Sponsor"
-    },
-    {
-      name: "Amazon Web Services",
-      logo: "https://via.placeholder.com/150x75/FF9900/FFFFFF?text=AWS",
-      level: "Silver Sponsor"
-    },
-    {
-      name: "IBM",
-      logo: "https://via.placeholder.com/150x75/052FAD/FFFFFF?text=IBM",
-      level: "Bronze Sponsor"
-    }
-  ]
-
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="section section-white">
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
+            <div className="inline-block px-6 py-2 bg-gradient-to-r from-primary-600 to-secondary-600 text-white rounded-full text-sm font-semibold mb-4">
+              SKILLING PARTNER
+            </div>
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Our <span className="text-primary-600">Project Partners</span>
+              All India Foundation for <span className="text-primary-600">Deaf Women</span>
             </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We're proud to collaborate with organizations and sponsors who share our vision 
-              of empowering women through digital technology and creating positive change in our communities.
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto">
+              Empowering women with hearing impairments through digital literacy and entrepreneurship across India
             </p>
           </div>
         </div>
       </section>
 
-      {/* Partners Section */}
-      <section className="section section-light">
+      {/* About AIFDW Section */}
+      <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Strategic Partners</h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Organizations working alongside us to create meaningful impact in digital empowerment
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {partners.map((partner, index) => (
-              <div key={index} className="card hover:shadow-2xl transition-all duration-300">
-                <div className="text-center mb-6">
-                  <img 
-                    src={partner.logo} 
-                    alt={`${partner.name} logo`}
-                    className="w-32 h-16 object-contain mx-auto mb-4"
-                  />
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                    {partner.name}
-                  </h3>
-                  <span className="inline-block px-3 py-1 bg-primary-100 text-primary-700 text-sm font-medium rounded-full">
-                    {partner.focus}
-                  </span>
-                </div>
-                
-                <p className="text-gray-600 mb-6 leading-relaxed">
-                  {partner.description}
+            <div>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">About AIFDW</h2>
+              <div className="space-y-6">
+                <p className="text-lg text-gray-700 leading-relaxed">
+                  Founded in <strong>1995</strong>, the All India Foundation for Deaf Women (AIFDW) is a pioneering non-profit organization dedicated to empowering women with hearing impairments across India.
                 </p>
-                
-                <div className="flex justify-center">
-                  <a
-                    href={partner.website}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn btn-secondary text-sm"
-                  >
-                    Visit Website
-                  </a>
+                <p className="text-lg text-gray-700 leading-relaxed">
+                  Over the past decades, AIFDW has positively impacted the lives of <strong>over 15,000 women</strong> across <strong>17 chapters nationwide</strong>, focusing on skills development, entrepreneurship, education, and social inclusion.
+                </p>
+                <p className="text-lg text-gray-700 leading-relaxed">
+                  AIFDW works with women from diverse socio-economic backgrounds, including those from marginalized communities such as Scheduled Tribes (ST), Scheduled Castes (SC), Other Backward Classes (OBC), and urban slum populations. Many of these women face limited access to formal education, employment, and livelihood opportunities due to systemic barriers and social stigma. This has historically restricted their economic independence and participation in society.
+                </p>
+                <p className="text-lg text-gray-700 leading-relaxed">
+                  Through its initiatives, AIFDW equips women with vocational skills, entrepreneurship training, and social support networks. The collaboration with Digital Saheli focuses on bridging the digital literacy gap and enabling women to leverage social media for small business growth, storytelling, and income generation.
+                </p>
+              </div>
+              
+              {/* Statistics Cards */}
+              <div className="mt-8 bg-white rounded-2xl p-8 shadow-lg">
+                <div className="grid grid-cols-4 gap-6 text-center">
+                  <div className="bg-primary-50 rounded-xl p-6">
+                    <div className="text-3xl font-bold text-primary-600 mb-2">15,000+</div>
+                    <p className="text-gray-700 font-medium">Women Impacted</p>
+                  </div>
+                  <div className="bg-secondary-50 rounded-xl p-6">
+                    <div className="text-3xl font-bold text-secondary-600 mb-2">17</div>
+                    <p className="text-gray-700 font-medium">Chapters Nationwide</p>
+                  </div>
+                  <div className="bg-green-50 rounded-xl p-6">
+                    <div className="text-3xl font-bold text-green-600 mb-2">1995</div>
+                    <p className="text-gray-700 font-medium">Founded</p>
+                  </div>
+                  <div className="bg-purple-50 rounded-xl p-6">
+                    <div className="text-3xl font-bold text-purple-600 mb-2">28+</div>
+                    <p className="text-gray-700 font-medium">Years of Service</p>
+                  </div>
                 </div>
               </div>
-            ))}
           </div>
         </div>
       </section>
 
-      {/* Sponsors Section */}
-      <section className="section section-white">
+
+
+      {/* Digital Saheli Partnership Section */}
+      <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Sponsors</h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Thank you to our generous sponsors who make our mission possible
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">Digital Saheli Partnership</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Our collaboration focuses on bridging the digital literacy gap and enabling women to leverage social media for business growth
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
-            {sponsors.map((sponsor, index) => (
-              <div key={index} className="text-center group">
-                <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-                  <img 
-                    src={sponsor.logo} 
-                    alt={`${sponsor.name} logo`}
-                    className="w-full h-16 object-contain mb-3"
-                  />
-                  <p className="text-sm text-gray-500 font-medium">
-                    {sponsor.level}
-                  </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-white rounded-2xl p-8 shadow-lg">
+              <div className="flex items-center mb-6">
+                <div className="w-16 h-16 bg-primary-600 rounded-full flex items-center justify-center mr-4">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                  </svg>
                 </div>
+                <h3 className="text-xl font-bold text-gray-900">Inclusive Training Modules</h3>
               </div>
-            ))}
+              <p className="text-gray-700 leading-relaxed">
+                Developing inclusive training modules featuring sign-language augmented videos and tutorials, tailored specifically for hearing-impaired women.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-2xl p-8 shadow-lg">
+              <div className="flex items-center mb-6">
+                <div className="w-16 h-16 bg-secondary-600 rounded-full flex items-center justify-center mr-4">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 4V2a1 1 0 011-1h8a1 1 0 011 1v2m0 0V1a1 1 0 011-1h2a1 1 0 011 1v18a1 1 0 01-1 1H4a1 1 0 01-1-1V1a1 1 0 011-1h2a1 1 0 011 1v3m0 0h8" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900">Social Media Marketing</h3>
+              </div>
+              <p className="text-gray-700 leading-relaxed">
+                Conducting workshops on social media marketing, including Instagram strategy, reel creation, digital catalog design, post timing, and hashtag optimization.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-2xl p-8 shadow-lg">
+              <div className="flex items-center mb-6">
+                <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mr-4">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900">Entrepreneurship Capacity</h3>
+              </div>
+              <p className="text-gray-700 leading-relaxed">
+                Building capacity for entrepreneurship, enabling women to set up homegrown ventures online and reach wider audiences.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-2xl p-8 shadow-lg">
+              <div className="flex items-center mb-6">
+                <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mr-4">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900">Community Networks</h3>
+              </div>
+              <p className="text-gray-700 leading-relaxed">
+                Fostering community networks across 17 chapters for peer learning, mentorship, and collaborative growth.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Partnership CTA Section */}
-      <section className="section section-light">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="card">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Interested in Partnering with Us?
-            </h2>
-            <p className="text-lg text-gray-600 mb-8">
-              Join our network of partners and help us create a more digitally empowered future. 
-              Together, we can make a lasting impact in our communities.
+      {/* Impact Text Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Shared Impact</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Together, we're creating meaningful change for women with hearing impairments across India
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="/contact"
-                className="btn"
-              >
-                Become a Partner
-              </a>
-              <a
-                href="/contact"
-                className="btn btn-secondary"
-              >
-                Sponsor Our Mission
-              </a>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {/* Immediate Impact Card */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
+              <div className="flex items-center mb-6">
+                <div className="w-16 h-16 bg-primary-600 rounded-full flex items-center justify-center mr-4">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900">Immediate Impact</h3>
+              </div>
+              <p className="text-lg text-gray-700 leading-relaxed">
+                This collaboration ensures that women with hearing impairments gain digital skills and entrepreneurial confidence, enabling financial independence and amplifying their voices in society.
+              </p>
+            </div>
+
+            {/* Long-term Vision Card */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
+              <div className="flex items-center mb-6">
+                <div className="w-16 h-16 bg-secondary-600 rounded-full flex items-center justify-center mr-4">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900">Long-term Vision</h3>
+              </div>
+              <p className="text-lg text-gray-700 leading-relaxed">
+                Digital Saheli's partnership with AIFDW is backed by a shared vision of inclusive empowerment, scalable training, and sustainable economic impact, aiming to reach thousands of women across India over the next five years.
+              </p>
+            </div>
+          </div>
+
+          {/* Call to Action */}
+          <div className="mt-16 text-center">
+            <div className="bg-gradient-to-r from-primary-600 to-secondary-600 rounded-2xl p-8 text-white">
+              <h3 className="text-2xl font-bold mb-4">Join Our Mission</h3>
+              <p className="text-lg text-white text-opacity-90 max-w-3xl mx-auto mb-6">
+                Be part of creating inclusive digital empowerment for women across India
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <a
+                  href="/contact"
+                  className="bg-white text-primary-600 hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold transition-colors"
+                >
+                  Partner with Us
+                </a>
+                <a
+                  href="/events"
+                  className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary-600 px-8 py-3 rounded-lg font-semibold transition-colors"
+                >
+                  Learn More
+                </a>
+              </div>
             </div>
           </div>
         </div>

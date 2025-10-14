@@ -54,14 +54,6 @@ const ImageSlider = ({ images, autoPlay = true, interval = 5000 }) => {
             <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl">
               {images[currentIndex].description}
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <button className="bg-primary-600 hover:bg-primary-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors">
-                Get Involved
-              </button>
-              <button className="border-2 border-white text-white hover:bg-white hover:text-primary-600 px-8 py-3 rounded-lg font-semibold transition-colors">
-                Learn More
-              </button>
-            </div>
           </div>
         </div>
       </div>

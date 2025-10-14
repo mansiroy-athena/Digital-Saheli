@@ -1,5 +1,15 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import bombay1 from '../assets/bombay1.jpg'
+import bombay2 from '../assets/bombay2.jpg'
+import bombay3 from '../assets/bombay3.jpeg'
+import link1 from '../assets/link1.jpg'
+import link2 from '../assets/link2.jpg'
+import link3 from '../assets/link3.jpg'
+import seva1 from '../assets/seva1.jpg'
+import seva2 from '../assets/seva2.jpg'
+import seva3 from '../assets/seva3.jpg'
+import seva4 from '../assets/seva4.jpg'
 
 const EventsPage = () => {
   const events = [
@@ -71,162 +81,315 @@ const EventsPage = () => {
     }
   ]
 
-  const getStatusColor = (status) => {
-    switch (status) {
-      case 'Upcoming':
-        return 'bg-green-100 text-green-800'
-      case 'Completed':
-        return 'bg-gray-100 text-gray-800'
-      case 'Cancelled':
-        return 'bg-red-100 text-red-800'
-      default:
-        return 'bg-gray-100 text-gray-800'
-    }
-  }
 
-  const getTypeColor = (type) => {
-    switch (type) {
-      case 'Workshop':
-        return 'bg-primary-100 text-primary-800'
-      case 'Masterclass':
-        return 'bg-secondary-100 text-secondary-800'
-      case 'Meetup':
-        return 'bg-green-100 text-green-800'
-      case 'Networking':
-        return 'bg-yellow-100 text-yellow-800'
-      default:
-        return 'bg-gray-100 text-gray-800'
-    }
-  }
+
+
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="bg-gradient-to-r from-primary-600 to-secondary-600 py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="inline-block px-6 py-2 bg-white bg-opacity-20 rounded-full text-sm font-semibold mb-6 text-gray-600">
-            UPCOMING EVENTS
-          </div>
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-            Join Our Events
-          </h1>
-          <p className="text-xl text-white text-opacity-90 mb-8 max-w-4xl mx-auto">
-            Participate in our workshops, masterclasses, and community events designed to empower women entrepreneurs 
-            with essential digital skills and networking opportunities.
-          </p>
-        </div>
-      </section>
 
-      {/* Events Filter */}
-      <section className="py-8 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-wrap justify-center gap-4 mb-8">
-            <button className="px-6 py-2 bg-primary-600 text-white rounded-full text-sm font-medium">
-              All Events
-            </button>
-            <button className="px-6 py-2 bg-white text-gray-700 hover:bg-primary-50 rounded-full text-sm font-medium">
-              Upcoming
-            </button>
-            <button className="px-6 py-2 bg-white text-gray-700 hover:bg-primary-50 rounded-full text-sm font-medium">
-              Completed
-            </button>
-            <button className="px-6 py-2 bg-white text-gray-700 hover:bg-primary-50 rounded-full text-sm font-medium">
-              Workshops
-            </button>
-            <button className="px-6 py-2 bg-white text-gray-700 hover:bg-primary-50 rounded-full text-sm font-medium">
-              Masterclasses
-            </button>
-          </div>
-        </div>
-      </section>
 
-      {/* Events Grid */}
+      {/* How Our Journey Started */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {events.map((event) => (
-              <div key={event.id} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-                <div className="relative">
-                  <img
-                    src={event.image}
-                    alt={event.title}
-                    className="w-full h-48 object-cover"
-                  />
-                  <div className="absolute top-4 left-4 flex gap-2">
-                    <span className={`px-3 py-1 rounded-full text-xs font-semibold ${getTypeColor(event.type)}`}>
-                      {event.type}
-                    </span>
-                    <span className={`px-3 py-1 rounded-full text-xs font-semibold ${getStatusColor(event.status)}`}>
-                      {event.status}
-                    </span>
-                  </div>
+          <div className="text-center mb-16">
+            <div className="inline-block px-6 py-2 bg-gradient-to-r from-primary-600 to-secondary-600 text-white rounded-full text-sm font-semibold mb-4">
+              OUR STORY
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">How Our Journey Started</h2>
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto">
+              Digital Saheli was born from real stories of transformation. Here are the inspiring journeys 
+              that shaped our mission to empower women through digital literacy.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            {/* Maya Aunty Story */}
+            <div className="bg-gradient-to-br from-primary-50 to-primary-100 rounded-2xl p-8 border border-primary-200">
+              <div className="flex items-center mb-6">
+                <div className="w-16 h-16 bg-primary-600 rounded-full flex items-center justify-center mr-4">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-900">Maya Aunty</h3>
+                  <p className="text-primary-600 font-semibold">The First Digital Saheli</p>
+                </div>
+              </div>
+              
+              <div className="space-y-4">
+                <p className="text-gray-700 leading-relaxed">
+                  Maya Aunty, a cancer survivor in her 70s from Mumbai, began handcrafting tote bags to raise funds for underprivileged cancer patients. Despite her impactful mission, her sales were limited to friends and family, restricting her reach.
+                </p>
+                
+                <div className="bg-white rounded-lg p-4 border-l-4 border-primary-600">
+                  <p className="text-gray-700 font-medium">
+                    "Digital Saheli worked with Maya to build her Instagram presence, create reels telling her story, and connect her to a wider audience. Within months, her online engagement and sales increased significantly, allowing her to support more patients. Maya became the first official “Digital Saheli” and a living testament to the power of digital literacy in driving social impact."
+                  </p>
                 </div>
                 
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">{event.title}</h3>
-                  
-                  <div className="space-y-2 mb-4">
-                    <div className="flex items-center text-gray-600">
-                      <svg className="w-4 h-4 mr-2 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                      </svg>
-                      {event.date}
-                    </div>
-                    <div className="flex items-center text-gray-600">
-                      <svg className="w-4 h-4 mr-2 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                      </svg>
-                      {event.time}
-                    </div>
-                    <div className="flex items-center text-gray-600">
-                      <svg className="w-4 h-4 mr-2 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                      </svg>
-                      {event.location}
-                    </div>
+                <p className="text-gray-700 leading-relaxed">
+                  Maya became the first official "Digital Saheli" and a living testament to the power of digital literacy in driving social impact.
+                </p>
+              </div>
+            </div>
+
+            {/* Shakti Bachat Story */}
+            <div className="bg-gradient-to-br from-secondary-50 to-secondary-100 rounded-2xl p-8 border border-secondary-200">
+              <div className="flex items-center mb-6">
+                <div className="w-16 h-16 bg-secondary-600 rounded-full flex items-center justify-center mr-4">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-900">Shakti Bachat</h3>
+                  <p className="text-secondary-600 font-semibold">Community Empowerment with Soni Didi</p>
+                </div>
+              </div>
+              
+              <div className="space-y-4">
+                <p className="text-gray-700 leading-relaxed">
+                  Shakti Bachat is a community-driven savings initiative in Maharashtra aimed at empowering women through financial literacy and collective savings.
+                </p>
+                
+                <div className="bg-white rounded-lg p-4 border-l-4 border-secondary-600">
+                  <p className="text-gray-700 font-medium">
+                    "Collaborating with Soni Didi, Digital Saheli strengthened this program by introducing digital awareness and entrepreneurship skills. Women in the Shakti Bachat network learned to leverage social media for micro-business ventures, combining financial literacy with digital empowerment to increase their independence and economic resilience.
+                    "
+                  </p>
+                </div>
+                
+                <p className="text-gray-700 leading-relaxed">
+                  This initiative combined financial literacy with digital empowerment to increase women's independence and economic resilience.
+          </p>
+        </div>
+            </div>
+          </div>
+
+          {/* Impact Statement */}
+          <div className="mt-16 text-center">
+            <div className="bg-gradient-to-r from-primary-600 to-secondary-600 rounded-2xl p-8 text-white">
+              <h3 className="text-2xl font-bold mb-4">These Stories Inspire Our Mission</h3>
+              <p className="text-lg text-white text-opacity-90 max-w-3xl mx-auto">
+                Every woman has a story worth telling and a business worth growing. Through our events and programs, 
+                we help more women like Maya Aunty and the Shakti Bachat community discover their digital potential.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Workshops Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <div className="inline-block px-6 py-2 bg-gradient-to-r from-primary-600 to-secondary-600 text-white rounded-full text-sm font-semibold mb-4">
+              OUR IMPACT
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Workshops – Training Women Across India</h2>
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto">
+              Through our comprehensive workshop programs, we've empowered hundreds of women entrepreneurs 
+              across India with essential digital skills and marketing knowledge.
+            </p>
+          </div>
+
+          <div className="space-y-8">
+            {/* Seva Sadan Workshop */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
+              <div className="flex items-center mb-8">
+                <div className="w-16 h-16 bg-primary-600 rounded-full flex items-center justify-center mr-4">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-900">Seva Sadan</h3>
+                  <p className="text-primary-600 font-semibold text-lg">Mumbai</p>
+                </div>
+              </div>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                {/* Card 1 - Workshop Scale */}
+                <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl overflow-hidden border border-blue-200">
+                  <img 
+                    src={seva1} 
+                    alt="Workshop participants" 
+                    className="w-full h-48 object-cover"
+                  />
+                  <div className="p-4 text-center">
+                    <h4 className="font-bold text-gray-900 mb-2 text-lg">Workshop Scale</h4>
+                    <p className="text-gray-700 text-sm leading-relaxed">Conducted in-person workshops for 40+ women entrepreneurs.</p>
                   </div>
-                  
-                  <p className="text-gray-600 mb-4 text-sm">{event.description}</p>
-                  
-                  <div className="flex gap-2">
-                    {event.status === 'Upcoming' ? (
-                      <button className="flex-1 bg-primary-600 hover:bg-primary-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors">
-                        Register Now
-                      </button>
-                    ) : (
-                      <button className="flex-1 bg-gray-300 text-gray-600 px-4 py-2 rounded-lg text-sm font-semibold cursor-not-allowed">
-                        Event Completed
-                      </button>
-                    )}
-                    <button className="px-4 py-2 border border-primary-600 text-primary-600 hover:bg-primary-50 rounded-lg text-sm font-semibold transition-colors">
-                      Details
-                    </button>
+                </div>
+
+                {/* Card 2 - Focus Areas */}
+                <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl overflow-hidden border border-green-200">
+                  <img 
+                    src={seva2} 
+                    alt="Digital marketing training" 
+                    className="w-full h-48 object-cover"
+                  />
+                  <div className="p-4 text-center">
+                    <h4 className="font-bold text-gray-900 mb-2 text-lg">Focus Areas</h4>
+                    <p className="text-gray-700 text-sm leading-relaxed">Setting up Instagram business accounts, content creation, understanding hashtags, and digital marketing basics.</p>
+                  </div>
+                </div>
+
+                {/* Card 3 - Participants */}
+                <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl overflow-hidden border border-purple-200">
+                  <img 
+                    src={seva3} 
+                    alt="Women entrepreneurs" 
+                    className="w-full h-48 object-cover"
+                  />
+                  <div className="p-4 text-center">
+                    <h4 className="font-bold text-gray-900 mb-2 text-lg">Participant Types</h4>
+                    <p className="text-gray-700 text-sm leading-relaxed">Participants ranged from home bakers and tutors to self-taught fashion designers.</p>
+                  </div>
+                </div>
+
+                {/* Card 4 - Outcome */}
+                <div className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl overflow-hidden border border-orange-200">
+                  <img 
+                    src={seva4} 
+                    alt="Success and engagement" 
+                    className="w-full h-48 object-cover"
+                  />
+                  <div className="p-4 text-center">
+                    <h4 className="font-bold text-gray-900 mb-2 text-lg">Outcome</h4>
+                    <p className="text-gray-700 text-sm leading-relaxed">Women reported increased confidence in promoting their products online and saw a measurable increase in customer engagement.</p>
                   </div>
                 </div>
               </div>
-            ))}
+            </div>
+
+            {/* Links Foundation Workshop */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
+              <div className="flex items-center mb-8">
+                <div className="w-16 h-16 bg-secondary-600 rounded-full flex items-center justify-center mr-4">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-900">Links Foundation</h3>
+                  <p className="text-secondary-600 font-semibold text-lg">Bangalore</p>
+                </div>
+              </div>
+              
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                {/* Card 1 - Focus Strategy */}
+                <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl overflow-hidden border border-blue-200">
+                  <img 
+                    src={link1} 
+                    alt="Digital promotion strategies" 
+                    className="w-full h-48 object-cover"
+                  />
+                  <div className="p-4 text-center">
+                    <h4 className="font-bold text-gray-900 mb-2 text-lg">Focus Strategy</h4>
+                    <p className="text-gray-700 text-sm leading-relaxed">Focused on digital promotion strategies tailored for handmade products and services.</p>
+                  </div>
+                </div>
+
+                {/* Card 2 - Hands-on Sessions */}
+                <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl overflow-hidden border border-green-200">
+                  <img 
+                    src={link2} 
+                    alt="Hands-on training sessions" 
+                    className="w-full h-48 object-cover"
+                  />
+                  <div className="p-4 text-center">
+                    <h4 className="font-bold text-gray-900 mb-2 text-lg">Hands-on Sessions</h4>
+                    <p className="text-gray-700 text-sm leading-relaxed">Designing online catalogs, creating reels, scheduling posts, and optimizing post timing.</p>
+                  </div>
+                </div>
+
+                {/* Card 3 - Outcome */}
+                <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl overflow-hidden border border-purple-200">
+                  <img 
+                    src={link3} 
+                    alt="Successful business launch" 
+                    className="w-full h-48 object-cover"
+                  />
+                  <div className="p-4 text-center">
+                    <h4 className="font-bold text-gray-900 mb-2 text-lg">Outcome</h4>
+                    <p className="text-gray-700 text-sm leading-relaxed">Participants successfully launched Instagram pages for their businesses, connecting with a wider urban audience.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Bombay Foundation Workshop */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
+              <div className="flex items-center mb-8">
+                <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mr-4">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-900">Bombay Foundation</h3>
+                  <p className="text-green-600 font-semibold text-lg">Mumbai</p>
+                </div>
+              </div>
+              
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                {/* Card 1 - Adapted Workshops */}
+                <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl overflow-hidden border border-blue-200">
+                  <img 
+                    src={bombay1} 
+                    alt="Accessible workshops" 
+                    className="w-full h-48 object-cover"
+                  />
+                  <div className="p-4 text-center">
+                    <h4 className="font-bold text-gray-900 mb-2 text-lg">Adapted Workshops</h4>
+                    <p className="text-gray-700 text-sm leading-relaxed">Workshops adapted for hearing-impaired women using Indian Sign Language (ISL) and visual aids.</p>
+                  </div>
+                </div>
+
+                {/* Card 2 - Training Focus */}
+                <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl overflow-hidden border border-green-200">
+                  <img 
+                    src={bombay2} 
+                    alt="Celebrity collaborations" 
+                    className="w-full h-48 object-cover"
+                  />
+                  <div className="p-4 text-center">
+                    <h4 className="font-bold text-gray-900 mb-2 text-lg">Training Focus</h4>
+                    <p className="text-gray-700 text-sm leading-relaxed">Reel creation, marketing strategy, and storytelling, including celebrity collaborations (Manushi Chillar and Poonam Singh) for exhibitions and sales.</p>
+                  </div>
+                </div>
+
+                {/* Card 3 - Outcome */}
+                <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl overflow-hidden border border-purple-200">
+                  <img 
+                    src={bombay3} 
+                    alt="Increased footfall" 
+                    className="w-full h-48 object-cover"
+                  />
+                  <div className="p-4 text-center">
+                    <h4 className="font-bold text-gray-900 mb-2 text-lg">Outcome</h4>
+                    <p className="text-gray-700 text-sm leading-relaxed">Footfall at exhibitions increased by 40% post-intervention; women gained skills in content creation and customer engagement.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+
+
         </div>
       </section>
 
       {/* Newsletter Section */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Stay Updated</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">Empowering Women Through Digital Literacy</h2>
           <p className="text-xl text-gray-600 mb-8">
-            Subscribe to our newsletter to receive updates about upcoming events, workshops, and community programs.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-            <input
-              type="email"
-              placeholder="Enter your email address"
-              className="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-            />
-            <button className="bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
-              Subscribe
-            </button>
-          </div>
+          Our workshops have reached diverse communities across India, from urban entrepreneurs to hearing-impaired women, 
+          proving that digital empowerment knows no boundaries. Every participant leaves with practical skills and renewed confidence.          </p>
         </div>
       </section>
 
@@ -247,3 +410,7 @@ const EventsPage = () => {
 }
 
 export default EventsPage
+
+
+
+
