@@ -30,9 +30,8 @@ const Header = () => {
                   className="w-full h-full object-contain"
                 />
               </div>
-              <div className="ml-3">
+              <div className="">
                 <h1 className="text-xl font-bold text-gray-900">Digital Saheli</h1>
-                <p className="text-sm text-gray-500">by Navyaa</p>
               </div>
             </Link>
           </div>
