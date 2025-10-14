@@ -67,9 +67,9 @@ const TestimonialsPage = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-primary-600 to-secondary-600 py-20">
+      <section className="bg-gradient-to-r from-primary-600 to-secondary-600 py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="inline-block px-6 py-2 bg-white bg-opacity-20 rounded-full text-sm font-semibold mb-6 text-gray-600">
+          <div className="inline-block px-6 py-2 bg-white bg-opacity-20 rounded-full text-sm font-semibold mb-2 text-gray-600">
             SUCCESS STORIES
           </div>
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
@@ -83,7 +83,7 @@ const TestimonialsPage = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="py-16 bg-white">
+      <section className="py-8 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Impact in Numbers</h2>
