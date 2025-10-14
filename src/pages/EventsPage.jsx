@@ -26,6 +26,7 @@ import galleryImage7 from '../assets/Image (23).jpg'
 import galleryImage8 from '../assets/Image (24).jpg'
 import galleryImage9 from '../assets/Image (25).jpg'
 import mayaImage from '../assets/Maya.png'
+import saktiImage from '../assets/Sakti.png'
 
 const EventsPage = () => {
   const events = [
@@ -106,7 +107,7 @@ const EventsPage = () => {
 
 
       {/* How Our Journey Started */}
-      <section className="py-16 bg-white">
+      <section className="py-10 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <div className="inline-block px-6 py-2 bg-gradient-to-r from-primary-600 to-secondary-600 text-white rounded-full text-sm font-semibold mb-4">
@@ -122,16 +123,14 @@ const EventsPage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             {/* Maya Aunty Story */}
             <div className="bg-gradient-to-br from-primary-50 to-primary-100 rounded-2xl p-8 border border-primary-200">
-              <div className="flex items-center mb-6">
-                <div className="w-16 h-16 bg-primary-600 rounded-full flex items-center justify-center mr-4">
-                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                  </svg>
-                </div>
-                <div>
-                  <h3 className="text-2xl font-bold text-gray-900">Maya Aunty</h3>
-                  <p className="text-primary-600 font-semibold">The First Digital Saheli</p>
-                </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Maya Aunty</h3>
+              
+              <div className="mb-6">
+                <img 
+                  src={mayaImage} 
+                  alt="Maya Aunty" 
+                  className="w-full h-84 object-cover rounded-xl shadow-lg"
+                />
               </div>
               
               <div className="space-y-4">
@@ -153,16 +152,14 @@ const EventsPage = () => {
 
             {/* Shakti Bachat Story */}
             <div className="bg-gradient-to-br from-secondary-50 to-secondary-100 rounded-2xl p-8 border border-secondary-200">
-              <div className="flex items-center mb-6">
-                <div className="w-16 h-16 bg-secondary-600 rounded-full flex items-center justify-center mr-4">
-                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                  </svg>
-                </div>
-                <div>
-                  <h3 className="text-2xl font-bold text-gray-900">Shakti Bachat</h3>
-                  <p className="text-secondary-600 font-semibold">Community Empowerment with Soni Didi</p>
-                </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Shakti Bachat</h3>
+              
+              <div className="mb-6">
+                <img 
+                  src={saktiImage} 
+                  alt="Shakti Bachat" 
+                  className="w-full h-84 object-cover rounded-xl shadow-lg"
+                />
               </div>
               
               <div className="space-y-4">
@@ -172,8 +169,7 @@ const EventsPage = () => {
                 
                 <div className="bg-white rounded-lg p-4 border-l-4 border-secondary-600">
                   <p className="text-gray-700 font-medium">
-                    "Collaborating with Soni Didi, Digital Saheli strengthened this program by introducing digital awareness and entrepreneurship skills. Women in the Shakti Bachat network learned to leverage social media for micro-business ventures, combining financial literacy with digital empowerment to increase their independence and economic resilience.
-                    "
+                    "Collaborating with Soni Didi, Digital Saheli strengthened this program by introducing digital awareness and entrepreneurship skills. Women in the Shakti Bachat network learned to leverage social media for micro-business ventures, combining financial literacy with digital empowerment to increase their independence and economic resilience."
                   </p>
                 </div>
                 
@@ -189,8 +185,8 @@ const EventsPage = () => {
       </section>
 
       {/* Workshops Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-10 bg-gray-50">
+        <div className="">
           <div className="text-center mb-16">
             <div className="inline-block px-6 py-2 bg-gradient-to-r from-primary-600 to-secondary-600 text-white rounded-full text-sm font-semibold mb-4">
               OUR IMPACT
@@ -202,7 +198,7 @@ const EventsPage = () => {
             </p>
           </div>
 
-          <div className="space-y-8">
+          <div className="space-y-4">
             {/* Seva Sadan Workshop */}
             <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
               <div className="flex items-center mb-8">
@@ -391,9 +387,9 @@ const EventsPage = () => {
       </section>
 
       {/* Event Gallery Section */}
-      <section className="py-16 bg-white">
+      <section className="py-10 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+          <div className="text-center mb-4">
             <div className="inline-block px-6 py-2 bg-gradient-to-r from-primary-600 to-secondary-600 text-white rounded-full text-sm font-semibold mb-4">
               EVENT GALLERY
             </div>
@@ -403,160 +399,118 @@ const EventsPage = () => {
             </p>
           </div>
 
-          {/* Main Gallery Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-            {/* Large Featured Image */}
-            <div className="md:col-span-2 lg:col-span-2">
+          {/* Top Section - 3:1 Layout */}
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 mb-8">
+            {/* Left Side - Big Image (3 columns) */}
+            <div className="lg:col-span-3">
               <div className="relative group overflow-hidden rounded-xl shadow-lg">
                 <img 
                   src={galleryImage1} 
                   alt="Digital Saheli workshop in action" 
-                  className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-96 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
-                <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
-                  <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
-                    </svg>
-                  </div>
-                </div>
               </div>
             </div>
 
-            {/* Regular Gallery Images */}
-            <div className="relative group overflow-hidden rounded-xl shadow-lg">
-              <img 
-                src={galleryImage2} 
-                alt="Women learning digital skills" 
-                className="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
-              />
-              <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
-                <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
-                  </svg>
-                </div>
+            {/* Right Side - Two Images (1 column) */}
+            <div className="lg:col-span-1 space-y-2">
+              {/* Top Image */}
+              <div className="relative group overflow-hidden rounded-xl shadow-lg">
+                <img 
+                  src={galleryImage2} 
+                  alt="Women learning digital skills" 
+                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                />
               </div>
-            </div>
-
-            <div className="relative group overflow-hidden rounded-xl shadow-lg">
-              <img 
-                src={galleryImage3} 
-                alt="Community engagement" 
-                className="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
-              />
-              <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
-                <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-
-            <div className="relative group overflow-hidden rounded-xl shadow-lg">
-              <img 
-                src={galleryImage4} 
-                alt="Training session" 
-                className="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
-              />
-              <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
-                <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-
-            <div className="relative group overflow-hidden rounded-xl shadow-lg">
-              <img 
-                src={galleryImage5} 
-                alt="Success celebration" 
-                className="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
-              />
-              <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
-                <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-
-            <div className="relative group overflow-hidden rounded-xl shadow-lg">
-              <img 
-                src={galleryImage6} 
-                alt="Workshop participants" 
-                className="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
-              />
-              <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
-                <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
-                  </svg>
-                </div>
+              
+              {/* Bottom Image */}
+              <div className="relative group overflow-hidden rounded-xl shadow-lg">
+                <img 
+                  src={galleryImage3} 
+                  alt="Community engagement" 
+                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                />
               </div>
             </div>
           </div>
 
-          {/* Additional Gallery Row */}
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+          {/* Middle Section - One Row 5 Images */}
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 mb-8">
+            <div className="relative group overflow-hidden rounded-lg shadow-md">
+              <img 
+                src={galleryImage4} 
+                alt="Training session" 
+                className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+            <div className="relative group overflow-hidden rounded-lg shadow-md">
+              <img 
+                src={galleryImage5} 
+                alt="Success celebration" 
+                className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+            <div className="relative group overflow-hidden rounded-lg shadow-md">
+              <img 
+                src={galleryImage6} 
+                alt="Workshop participants" 
+                className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+            </div>
             <div className="relative group overflow-hidden rounded-lg shadow-md">
               <img 
                 src={galleryImage7} 
                 alt="Gallery image" 
-                className="w-full h-32 object-cover group-hover:scale-105 transition-transform duration-300"
+                className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
               />
             </div>
             <div className="relative group overflow-hidden rounded-lg shadow-md">
               <img 
                 src={galleryImage8} 
                 alt="Gallery image" 
-                className="w-full h-32 object-cover group-hover:scale-105 transition-transform duration-300"
+                className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
               />
             </div>
-            <div className="relative group overflow-hidden rounded-lg shadow-md">
-              <img 
-                src={galleryImage9} 
-                alt="Gallery image" 
-                className="w-full h-32 object-cover group-hover:scale-105 transition-transform duration-300"
-              />
+          </div>
+
+          {/* Bottom Section - 1:3 Layout */}
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
+            {/* Left Side - Two Images (1 column) */}
+            <div className="lg:col-span-1 space-y-4">
+              {/* Top Image */}
+              <div className="relative group overflow-hidden rounded-xl shadow-lg">
+                <img 
+                  src={galleryImage9} 
+                  alt="Gallery image" 
+                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              
+              {/* Bottom Image */}
+              <div className="relative group overflow-hidden rounded-xl shadow-lg">
+                <img 
+                  src={seva1} 
+                  alt="Seva Sadan workshop" 
+                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
             </div>
-            <div className="relative group overflow-hidden rounded-lg shadow-md">
-              <img 
-                src={seva1} 
-                alt="Seva Sadan workshop" 
-                className="w-full h-32 object-cover group-hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <div className="relative group overflow-hidden rounded-lg shadow-md">
-              <img 
-                src={link1} 
-                alt="Links Foundation workshop" 
-                className="w-full h-32 object-cover group-hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <div className="relative group overflow-hidden rounded-lg shadow-md">
-              <img 
-                src={bombay1} 
-                alt="Bombay Foundation workshop" 
-                className="w-full h-32 object-cover group-hover:scale-105 transition-transform duration-300"
-              />
+
+            {/* Right Side - One Big Image (3 columns) */}
+            <div className="lg:col-span-3">
+              <div className="relative group overflow-hidden rounded-xl shadow-lg">
+                <img 
+                  src={link1} 
+                  alt="Links Foundation workshop" 
+                  className="w-full h-96 object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Newsletter Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Empowering Women Through Digital Literacy</h2>
-          <p className="text-xl text-gray-600 mb-8">
-          Our workshops have reached diverse communities across India, from urban entrepreneurs to hearing-impaired women, 
-          proving that digital empowerment knows no boundaries. Every participant leaves with practical skills and renewed confidence.          </p>
-        </div>
-      </section>
+
 
       {/* CTA Section */}
       <section className="py-16 bg-gradient-to-r from-primary-600 to-secondary-600">

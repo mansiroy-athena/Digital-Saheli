@@ -9,12 +9,13 @@ import partnerImage7 from '../assets/Image (7).jpg'
 import partnerImage8 from '../assets/Image (8).jpg'
 import partnerImage9 from '../assets/Image (9).jpg'
 import partnerImage10 from '../assets/Image (10).jpg'
+import screenRec1 from '../assets/ScreenRec (1).mp4'
 
 const ProjectPartnersPage = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="py-16 bg-white">
+      <section className="py-10 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <div className="inline-block px-6 py-2 bg-gradient-to-r from-primary-600 to-secondary-600 text-white rounded-full text-sm font-semibold mb-4">
@@ -31,51 +32,159 @@ const ProjectPartnersPage = () => {
       </section>
 
       {/* About AIFDW Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-8 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div>
+          {/* Top Section - Heading + First Two Paragraphs + Video */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-6">
+            {/* Left Side - Heading + First Two Paragraphs */}
+            <div className="space-y-6">
               <h2 className="text-3xl font-bold text-gray-900 mb-6">About AIFDW</h2>
-              <div className="space-y-6">
-                <p className="text-lg text-gray-700 leading-relaxed">
-                  Founded in <strong>1995</strong>, the All India Foundation for Deaf Women (AIFDW) is a pioneering non-profit organization dedicated to empowering women with hearing impairments across India.
-                </p>
-                <p className="text-lg text-gray-700 leading-relaxed">
-                  Over the past decades, AIFDW has positively impacted the lives of <strong>over 15,000 women</strong> across <strong>17 chapters nationwide</strong>, focusing on skills development, entrepreneurship, education, and social inclusion.
-                </p>
-                <p className="text-lg text-gray-700 leading-relaxed">
-                  AIFDW works with women from diverse socio-economic backgrounds, including those from marginalized communities such as Scheduled Tribes (ST), Scheduled Castes (SC), Other Backward Classes (OBC), and urban slum populations. Many of these women face limited access to formal education, employment, and livelihood opportunities due to systemic barriers and social stigma. This has historically restricted their economic independence and participation in society.
-                </p>
-                <p className="text-lg text-gray-700 leading-relaxed">
-                  Through its initiatives, AIFDW equips women with vocational skills, entrepreneurship training, and social support networks. The collaboration with Digital Saheli focuses on bridging the digital literacy gap and enabling women to leverage social media for small business growth, storytelling, and income generation.
-                </p>
+              <p className="text-lg text-gray-700 leading-relaxed">
+                Founded in <strong>1995</strong>, the All India Foundation for Deaf Women (AIFDW) is a pioneering non-profit organization dedicated to empowering women with hearing impairments across India.
+              </p>
+              <p className="text-lg text-gray-700 leading-relaxed">
+                Over the past decades, AIFDW has positively impacted the lives of <strong>over 15,000 women</strong> across <strong>17 chapters nationwide</strong>, focusing on skills development, entrepreneurship, education, and social inclusion.
+              </p>
+            </div>
+
+            {/* Right Side - ScreenRec Video */}
+            <div className="relative">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+                <video
+                  className="w-full h-auto"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                >
+                  <source src={screenRec1} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
               </div>
-              
-              {/* Statistics Cards */}
-              <div className="mt-8 bg-white rounded-2xl p-8 shadow-lg">
-                <div className="grid grid-cols-4 gap-6 text-center">
-                  <div className="bg-primary-50 rounded-xl p-6">
-                    <div className="text-3xl font-bold text-primary-600 mb-2">15,000+</div>
-                    <p className="text-gray-700 font-medium">Women Impacted</p>
-                  </div>
-                  <div className="bg-secondary-50 rounded-xl p-6">
-                    <div className="text-3xl font-bold text-secondary-600 mb-2">17</div>
-                    <p className="text-gray-700 font-medium">Chapters Nationwide</p>
-                  </div>
-                  <div className="bg-green-50 rounded-xl p-6">
-                    <div className="text-3xl font-bold text-green-600 mb-2">1995</div>
-                    <p className="text-gray-700 font-medium">Founded</p>
-                  </div>
-                  <div className="bg-purple-50 rounded-xl p-6">
-                    <div className="text-3xl font-bold text-purple-600 mb-2">28+</div>
-                    <p className="text-gray-700 font-medium">Years of Service</p>
-                  </div>
-                </div>
+            </div>
+          </div>
+
+          {/* Bottom Section - Remaining Two Paragraphs */}
+          <div className="space-y-6 mb-8">
+            <p className="text-lg text-gray-700 leading-relaxed">
+              AIFDW works with women from diverse socio-economic backgrounds, including those from marginalized communities such as Scheduled Tribes (ST), Scheduled Castes (SC), Other Backward Classes (OBC), and urban slum populations. Many of these women face limited access to formal education, employment, and livelihood opportunities due to systemic barriers and social stigma. This has historically restricted their economic independence and participation in society.
+            </p>
+            <p className="text-lg text-gray-700 leading-relaxed">
+              Through its initiatives, AIFDW equips women with vocational skills, entrepreneurship training, and social support networks. The collaboration with Digital Saheli focuses on bridging the digital literacy gap and enabling women to leverage social media for small business growth, storytelling, and income generation.
+            </p>
+          </div>
+
+          {/* Statistics Cards */}
+          <div className="bg-white rounded-2xl p-8 shadow-lg">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+              <div className="bg-primary-50 rounded-xl p-6">
+                <div className="text-3xl font-bold text-primary-600 mb-2">15,000+</div>
+                <p className="text-gray-700 font-medium">Women Impacted</p>
               </div>
+              <div className="bg-secondary-50 rounded-xl p-6">
+                <div className="text-3xl font-bold text-secondary-600 mb-2">17</div>
+                <p className="text-gray-700 font-medium">Chapters Nationwide</p>
+              </div>
+              <div className="bg-green-50 rounded-xl p-6">
+                <div className="text-3xl font-bold text-green-600 mb-2">1995</div>
+                <p className="text-gray-700 font-medium">Founded</p>
+              </div>
+              <div className="bg-purple-50 rounded-xl p-6">
+                <div className="text-3xl font-bold text-purple-600 mb-2">28+</div>
+                <p className="text-gray-700 font-medium">Years of Service</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
+      {/* Video Cards Section */}
+      <section className="py-8 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Top Row - 2 Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+            {/* Card 1 */}
+            <div className="bg-white rounded-xl shadow-lg border border-gray-200 p-6">
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Part 1: Building Your Presence on Social Media</h3>
+              <div className="mb-4">
+                <iframe
+                  width="100%"
+                  height="200"
+                  src="https://www.youtube.com/embed/nzBRb7LG_RY"
+                  title="Digital Skills Training"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="rounded-lg"
+                ></iframe>
+              </div>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Hi, I’m Navyaa, and welcome to this series for women entrepreneurs, made in collaboration with the All India Foundation of Deaf Women. In this video, we’ll explore how to set up your business account on Instagram. I’ll share tips on increasing your reach and making engaging posts. Stay tuned for templates and strategies to boost your online presence.   </p>
+            </div>
 
+            {/* Card 2 */}
+            <div className="bg-white rounded-xl shadow-lg border border-gray-200 p-6">
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Part 2: Crafting the Perfect Instagram Bio</h3>
+              <div className="mb-4">
+                <iframe
+                  width="100%"
+                  height="300"
+                  src="https://www.youtube.com/embed/cRiVxe2WShs"
+                  title="Success Stories"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="rounded-lg"
+                ></iframe>
+              </div>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Your Instagram bio is the first thing people notice about your profile. In this video, I’ll show you how to edit and optimize your bio. We’ll explore what makes a bio clear, catchy, and professional. I’ll also demonstrate how to write your bio using the microphone option.
+              </p>
+            </div>
+          </div>
+
+          {/* Bottom Row - 2 Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* Card 3 */}
+            <div className="bg-white rounded-xl shadow-lg border border-gray-200 p-6">
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Part 3: Why Switch to a Business or Creator Account?</h3>
+              <div className="mb-4">
+                <iframe
+                  width="100%"
+                  height="300"
+                  src="https://www.youtube.com/embed/5VQah7zj6Pw"
+                  title="Community Impact"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="rounded-lg"
+                ></iframe>
+              </div>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Switching to a business or creator account unlocks powerful tools on Instagram. You’ll gain access to analytics, insights, and the option to create ads. Adding your address, a shopping link, and category tabs makes your profile more professional. These features help you reach more customers and grow your brand.              </p>
+            </div>
+
+            {/* Card 4 */}
+            <div className="bg-white rounded-xl shadow-lg border border-gray-200 p-6">
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Part 4: Different Types of Instagram Posts and How to Use Them</h3>
+              <div className="mb-4">
+                <iframe
+                  width="100%"
+                  height="300"
+                  src="https://www.youtube.com/embed/XiMoIYznsHA"
+                  title="Partnership Journey"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="rounded-lg"
+                ></iframe>
+              </div>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Instagram isn’t just about posting pictures anymore—it’s about using the right format at the right time. In this video, I’ll explain the four main types of posts—Regular Posts, Reels, Stories, and Highlights—and how each one can help you grow your audience. I’ll share practical tips on when to use them, what works best for engagement, and how you can make your content stand out.              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Digital Saheli Partnership Section */}
       <section className="py-16 bg-gray-50">
@@ -216,156 +325,7 @@ const ProjectPartnersPage = () => {
         </div>
       </section>
 
-      {/* Partnership Gallery Section */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <div className="inline-block px-6 py-2 bg-gradient-to-r from-primary-600 to-secondary-600 text-white rounded-full text-sm font-semibold mb-4">
-              PARTNERSHIP GALLERY
-            </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Our Partnership Journey</h2>
-            <p className="text-xl text-gray-600 max-w-4xl mx-auto">
-              Visual stories of our collaboration with AIFDW and the impact we're creating together across India.
-            </p>
-          </div>
 
-          {/* Main Gallery Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-            {/* Large Featured Image */}
-            <div className="md:col-span-2 lg:col-span-2">
-              <div className="relative group overflow-hidden rounded-xl shadow-lg">
-                <img 
-                  src={partnerImage1} 
-                  alt="AIFDW partnership in action" 
-                  className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
-                />
-                <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
-                  <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Regular Gallery Images */}
-            <div className="relative group overflow-hidden rounded-xl shadow-lg">
-              <img 
-                src={partnerImage2} 
-                alt="Women empowerment through partnership" 
-                className="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
-              />
-              <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
-                <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-
-            <div className="relative group overflow-hidden rounded-xl shadow-lg">
-              <img 
-                src={partnerImage3} 
-                alt="Digital skills training" 
-                className="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
-              />
-              <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
-                <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-
-            <div className="relative group overflow-hidden rounded-xl shadow-lg">
-              <img 
-                src={partnerImage4} 
-                alt="Community impact" 
-                className="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
-              />
-              <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
-                <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-
-            <div className="relative group overflow-hidden rounded-xl shadow-lg">
-              <img 
-                src={partnerImage5} 
-                alt="Success stories" 
-                className="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
-              />
-              <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
-                <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-
-            <div className="relative group overflow-hidden rounded-xl shadow-lg">
-              <img 
-                src={partnerImage6} 
-                alt="Partnership celebration" 
-                className="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
-              />
-              <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
-                <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Additional Gallery Row */}
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
-            <div className="relative group overflow-hidden rounded-lg shadow-md">
-              <img 
-                src={partnerImage7} 
-                alt="Gallery image" 
-                className="w-full h-32 object-cover group-hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <div className="relative group overflow-hidden rounded-lg shadow-md">
-              <img 
-                src={partnerImage8} 
-                alt="Gallery image" 
-                className="w-full h-32 object-cover group-hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <div className="relative group overflow-hidden rounded-lg shadow-md">
-              <img 
-                src={partnerImage9} 
-                alt="Gallery image" 
-                className="w-full h-32 object-cover group-hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <div className="relative group overflow-hidden rounded-lg shadow-md">
-              <img 
-                src={partnerImage10} 
-                alt="Gallery image" 
-                className="w-full h-32 object-cover group-hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <div className="relative group overflow-hidden rounded-lg shadow-md">
-              <img 
-                src={partnerImage1} 
-                alt="Gallery image" 
-                className="w-full h-32 object-cover group-hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   )
 }
