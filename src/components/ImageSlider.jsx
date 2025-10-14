@@ -28,7 +28,7 @@ const ImageSlider = ({ images, autoPlay = true, interval = 5000 }) => {
   }
 
   return (
-    <div className="relative w-full h-96 md:h-[500px] overflow-hidden rounded-lg shadow-2xl">
+    <div className="relative w-full h-96 md:h-[500px] overflow-hidden shadow-2xl">
       {/* Main Image */}
       <div className="relative w-full h-full">
         <img

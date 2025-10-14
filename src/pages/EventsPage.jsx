@@ -10,6 +10,22 @@ import seva1 from '../assets/seva1.jpg'
 import seva2 from '../assets/seva2.jpg'
 import seva3 from '../assets/seva3.jpg'
 import seva4 from '../assets/seva4.jpg'
+import eventImage1 from '../assets/Image (11).jpg'
+import eventImage2 from '../assets/Image (12).jpg'
+import eventImage3 from '../assets/Image (13).jpg'
+import eventImage4 from '../assets/Image (14).jpg'
+import eventImage5 from '../assets/Image (15).jpg'
+import eventImage6 from '../assets/Image (16).jpg'
+import galleryImage1 from '../assets/Image (17).jpg'
+import galleryImage2 from '../assets/Image (18).jpg'
+import galleryImage3 from '../assets/Image (19).jpg'
+import galleryImage4 from '../assets/Image (20).jpg'
+import galleryImage5 from '../assets/Image (21).jpg'
+import galleryImage6 from '../assets/Image (22).jpg'
+import galleryImage7 from '../assets/Image (23).jpg'
+import galleryImage8 from '../assets/Image (24).jpg'
+import galleryImage9 from '../assets/Image (25).jpg'
+import mayaImage from '../assets/Maya.png'
 
 const EventsPage = () => {
   const events = [
@@ -20,7 +36,7 @@ const EventsPage = () => {
       time: "10:00 AM - 4:00 PM",
       location: "Community Center, New Delhi",
       description: "Learn the fundamentals of digital marketing, social media management, and online business setup. Perfect for beginners.",
-      image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=500&h=300&fit=crop",
+      image: eventImage1,
       type: "Workshop",
       status: "Upcoming"
     },
@@ -31,7 +47,7 @@ const EventsPage = () => {
       time: "9:00 AM - 5:00 PM",
       location: "Digital Hub, Mumbai",
       description: "Advanced training on setting up online stores, payment gateways, and digital payment systems for women entrepreneurs.",
-      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=300&fit=crop",
+      image: eventImage2,
       type: "Masterclass",
       status: "Upcoming"
     },
@@ -42,7 +58,7 @@ const EventsPage = () => {
       time: "2:00 PM - 6:00 PM",
       location: "Women's Center, Bangalore",
       description: "Hear inspiring success stories from women who have transformed their businesses through our programs.",
-      image: "https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=500&h=300&fit=crop",
+      image: eventImage3,
       type: "Meetup",
       status: "Completed"
     },
@@ -53,7 +69,7 @@ const EventsPage = () => {
       time: "11:00 AM - 3:00 PM",
       location: "Training Center, Chennai",
       description: "Learn how to leverage mobile platforms for business growth, including WhatsApp Business and mobile apps.",
-      image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=500&h=300&fit=crop",
+      image: eventImage4,
       type: "Workshop",
       status: "Upcoming"
     },
@@ -64,7 +80,7 @@ const EventsPage = () => {
       time: "6:00 PM - 9:00 PM",
       location: "Hotel Grand Plaza, Hyderabad",
       description: "Connect with fellow women entrepreneurs, share experiences, and build valuable business relationships.",
-      image: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=500&h=300&fit=crop",
+      image: eventImage5,
       type: "Networking",
       status: "Upcoming"
     },
@@ -75,7 +91,7 @@ const EventsPage = () => {
       time: "10:00 AM - 4:00 PM",
       location: "Creative Hub, Pune",
       description: "Learn how to create a strong digital brand identity and develop effective marketing strategies.",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop",
+      image: eventImage6,
       type: "Workshop",
       status: "Completed"
     }
@@ -106,6 +122,21 @@ const EventsPage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             {/* Maya Aunty Story */}
             <div className="bg-gradient-to-br from-primary-50 to-primary-100 rounded-2xl p-8 border border-primary-200">
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+                {/* Maya's Image */}
+                <div className="lg:col-span-1">
+                  <div className="relative">
+                    <img 
+                      src={mayaImage} 
+                      alt="Maya Aunty - The First Digital Saheli" 
+                      className="w-full h-80 object-cover rounded-xl shadow-lg"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-xl"></div>
+                  </div>
+                </div>
+                
+                {/* Content */}
+                <div className="lg:col-span-2">
               <div className="flex items-center mb-6">
                 <div className="w-16 h-16 bg-primary-600 rounded-full flex items-center justify-center mr-4">
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -125,13 +156,15 @@ const EventsPage = () => {
                 
                 <div className="bg-white rounded-lg p-4 border-l-4 border-primary-600">
                   <p className="text-gray-700 font-medium">
-                    "Digital Saheli worked with Maya to build her Instagram presence, create reels telling her story, and connect her to a wider audience. Within months, her online engagement and sales increased significantly, allowing her to support more patients. Maya became the first official “Digital Saheli” and a living testament to the power of digital literacy in driving social impact."
+                        "Digital Saheli worked with Maya to build her Instagram presence, create reels telling her story, and connect her to a wider audience. Within months, her online engagement and sales increased significantly, allowing her to support more patients. Maya became the first official "Digital Saheli" and a living testament to the power of digital literacy in driving social impact."
                   </p>
                 </div>
                 
                 <p className="text-gray-700 leading-relaxed">
                   Maya became the first official "Digital Saheli" and a living testament to the power of digital literacy in driving social impact.
                 </p>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -168,16 +201,7 @@ const EventsPage = () => {
             </div>
           </div>
 
-          {/* Impact Statement */}
-          <div className="mt-16 text-center">
-            <div className="bg-gradient-to-r from-primary-600 to-secondary-600 rounded-2xl p-8 text-white">
-              <h3 className="text-2xl font-bold mb-4">These Stories Inspire Our Mission</h3>
-              <p className="text-lg text-white text-opacity-90 max-w-3xl mx-auto">
-                Every woman has a story worth telling and a business worth growing. Through our events and programs, 
-                we help more women like Maya Aunty and the Shakti Bachat community discover their digital potential.
-              </p>
-            </div>
-          </div>
+         
         </div>
       </section>
 
@@ -380,6 +404,164 @@ const EventsPage = () => {
           </div>
 
 
+        </div>
+      </section>
+
+      {/* Event Gallery Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <div className="inline-block px-6 py-2 bg-gradient-to-r from-primary-600 to-secondary-600 text-white rounded-full text-sm font-semibold mb-4">
+              EVENT GALLERY
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Capturing Our Impact</h2>
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto">
+              See the moments that define our workshops, training sessions, and community events across India.
+            </p>
+          </div>
+
+          {/* Main Gallery Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+            {/* Large Featured Image */}
+            <div className="md:col-span-2 lg:col-span-2">
+              <div className="relative group overflow-hidden rounded-xl shadow-lg">
+                <img 
+                  src={galleryImage1} 
+                  alt="Digital Saheli workshop in action" 
+                  className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
+                  <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Regular Gallery Images */}
+            <div className="relative group overflow-hidden rounded-xl shadow-lg">
+              <img 
+                src={galleryImage2} 
+                alt="Women learning digital skills" 
+                className="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
+                <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div className="relative group overflow-hidden rounded-xl shadow-lg">
+              <img 
+                src={galleryImage3} 
+                alt="Community engagement" 
+                className="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
+                <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div className="relative group overflow-hidden rounded-xl shadow-lg">
+              <img 
+                src={galleryImage4} 
+                alt="Training session" 
+                className="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
+                <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div className="relative group overflow-hidden rounded-xl shadow-lg">
+              <img 
+                src={galleryImage5} 
+                alt="Success celebration" 
+                className="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
+                <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div className="relative group overflow-hidden rounded-xl shadow-lg">
+              <img 
+                src={galleryImage6} 
+                alt="Workshop participants" 
+                className="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
+                <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Additional Gallery Row */}
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+            <div className="relative group overflow-hidden rounded-lg shadow-md">
+              <img 
+                src={galleryImage7} 
+                alt="Gallery image" 
+                className="w-full h-32 object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+            <div className="relative group overflow-hidden rounded-lg shadow-md">
+              <img 
+                src={galleryImage8} 
+                alt="Gallery image" 
+                className="w-full h-32 object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+            <div className="relative group overflow-hidden rounded-lg shadow-md">
+              <img 
+                src={galleryImage9} 
+                alt="Gallery image" 
+                className="w-full h-32 object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+            <div className="relative group overflow-hidden rounded-lg shadow-md">
+              <img 
+                src={seva1} 
+                alt="Seva Sadan workshop" 
+                className="w-full h-32 object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+            <div className="relative group overflow-hidden rounded-lg shadow-md">
+              <img 
+                src={link1} 
+                alt="Links Foundation workshop" 
+                className="w-full h-32 object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+            <div className="relative group overflow-hidden rounded-lg shadow-md">
+              <img 
+                src={bombay1} 
+                alt="Bombay Foundation workshop" 
+                className="w-full h-32 object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+          </div>
         </div>
       </section>
 

@@ -1,22 +1,95 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import ImageSlider from '../components/ImageSlider.jsx'
+import image1 from '../assets/Image (1).jpg'
+import image2 from '../assets/Image (2).jpg'
+import image3 from '../assets/Image (3).jpg'
+import image4 from '../assets/Image (4).jpg'
+import image5 from '../assets/Image (5).jpg'
+import image6 from '../assets/Image (6).jpg'
+import image7 from '../assets/Image (7).jpg'
+import image8 from '../assets/Image (8).jpg'
+import image9 from '../assets/Image (9).jpg'
+import image10 from '../assets/Image (10).jpg'
+import image11 from '../assets/Image (11).jpg'
+import image12 from '../assets/Image (12).jpg'
+import image13 from '../assets/Image (13).jpg'
+import image14 from '../assets/Image (14).jpg'
+import image15 from '../assets/Image (15).jpg'
+import image16 from '../assets/Image (16).jpg'
+import image17 from '../assets/Image (17).jpg'
+import image18 from '../assets/Image (18).jpg'
+import image19 from '../assets/Image (19).jpg'
+import image20 from '../assets/Image (20).jpg'
+import image21 from '../assets/Image (21).jpg'
+import image22 from '../assets/Image (22).jpg'
+import image23 from '../assets/Image (23).jpg'
+import image24 from '../assets/Image (24).jpg'
+import image25 from '../assets/Image (25).jpg'
+import video1 from '../assets/video (1).mp4'
+import video2 from '../assets/video (2).mp4'
+import video3 from '../assets/video (3).mp4'
+import video4 from '../assets/video (4).mp4'
+import screenRec1 from '../assets/ScreenRec (1).mp4'
+import screenRec2 from '../assets/ScreenRec (2).mp4'
+import screenRec3 from '../assets/ScreenRec (3).mp4'
+import screenRec4 from '../assets/ScreenRec (4).mp4'
 
 const HomePage = () => {
+  const videoRefs = useRef([])
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const video = entry.target
+          if (entry.isIntersecting) {
+            video.play()
+          } else {
+            video.pause()
+          }
+        })
+      },
+      {
+        threshold: 0.5, // Trigger when 50% of video is visible
+      }
+    )
+
+    // Observe all video elements
+    videoRefs.current.forEach((video) => {
+      if (video) {
+        observer.observe(video)
+      }
+    })
+
+    return () => {
+      videoRefs.current.forEach((video) => {
+        if (video) {
+          observer.unobserve(video)
+        }
+      })
+    }
+  }, [])
+
+  const addToRefs = (el) => {
+    if (el && !videoRefs.current.includes(el)) {
+      videoRefs.current.push(el)
+    }
+  }
   const sliderImages = [
     {
-      url: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1200&h=600&fit=crop",
+      url: image1,
       title: "Why Social Media Marketing is Crucial for Small Businesses",
       description: "Social media platforms like Instagram, Facebook, and LinkedIn offer small businesses affordable, targeted marketing. They help build brand visibility, engage customers, promote products, and measure results — enabling quick growth and broader reach without high costs."
     },
     {
-      url: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=600&fit=crop",
+      url: image2,
       title: "Relevance to Women Empowerment",
       description: "Social media empowers women by offering flexible work options, digital skill development, and visibility for their ventures. It promotes financial independence, confidence, and equal participation in the digital economy.",
       alt: "Digital skills training workshop"
     },
     {
-      url: "https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=1200&h=600&fit=crop",
+      url: image23,
       title: "Building Strong Communities",
       description: "Digital marketing drives small business growth, formalization, and job creation. Empowering women entrepreneurs online strengthens communities, expands markets, and contributes significantly to national GDP.",
       alt: "Community development meeting"
@@ -27,44 +100,48 @@ const HomePage = () => {
     <div className="min-h-screen">
 
 
-      {/* NGO Mission Banner */}
-      <section className="bg-gradient-to-r from-primary-600 to-secondary-600 py-20 relative overflow-hidden">
+      {/* Hero Section with 3:1 Layout */}
+      <section className="bg-gradient-to-r from-primary-600 to-secondary-600 py-8 relative overflow-hidden min-h-screen flex items-center">
         {/* Background decoration */}
         <div className="absolute inset-0 bg-black bg-opacity-10"></div>
-        <div className="absolute top-10 left-10 w-20 h-20 bg-yellow-300 bg-opacity-20 rounded-full animate-pulse-slow"></div>
+        <div className="absolute top-10 left-10 w-20 h-20 bg-yellow-300 bg-opacity-20 rounded-full animate-rotate"></div>
         <div className="absolute bottom-10 right-10 w-32 h-32 bg-white bg-opacity-10 rounded-full animate-float"></div>
         
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-          {/* Main Title */}
-          <div className="animate-slide-in-down">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 tracking-tight">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+          {/* Main Title - Full Width */}
+          <div className="animate-slide-in-down text-center mb-8">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-2 tracking-tight">
               Digital Saheli
             </h1>
             <div className="animate-fade-in-up delay-200">
-              <span className="text-4xl md:text-5xl lg:text-6xl font-bold text-yellow-300 block mb-8 tracking-wide">
+              <span className="text-3xl md:text-4xl lg:text-5xl font-bold text-yellow-300 block tracking-wide">
                 Empowering Women
               </span>
             </div>
           </div>
 
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Story Content - 1 column (50%) */}
+            <div className="space-y-8">
+
           {/* Story Content */}
-          <div className="max-w-5xl mx-auto space-y-6">
+              <div className="space-y-6">
             <div className="animate-fade-in-up delay-300">
-              <p className="text-lg md:text-xl text-white text-opacity-95 leading-relaxed font-light">
+                  <p className="text-lg md:text-xl text-white text-opacity-95 leading-relaxed font-light">
                 I'm <span className="font-semibold text-yellow-300">Navyaa</span>, and my journey so far has been shaped by curiosity—curiosity about how people think, choose, and act, and how the stories we tell influence those choices. I analyze media, design, marketing, and performance, not just as creative tools but as forces that guide human behavior. Storytelling, for me, is more than expression—it is structure, influence, and connection.
               </p>
             </div>
             
             <div className="animate-fade-in-up delay-500">
-              <p className="text-lg md:text-xl text-white text-opacity-95 leading-relaxed font-light">
+                  <p className="text-lg md:text-xl text-white text-opacity-95 leading-relaxed font-light">
                 This passion for connecting ideas to impact led me to launch <span className="font-semibold text-yellow-300">Digital Saheli</span>, an initiative that equips women entrepreneurs from underserved communities with essential digital skills. Through workshops on social media marketing and branding, I help women build not just stronger businesses, but also stronger identities as entrepreneurs. Seeing them grow their presence online and translate it into real opportunities has been one of the most rewarding parts of my journey.
               </p>
             </div>
           </div>
 
           {/* Call to Action Buttons */}
-          <div className="animate-fade-in-up delay-700 mt-12">
-            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+              <div className="animate-fade-in-up delay-700">
+                <div className="flex flex-col sm:flex-row gap-6">
               <Link 
                 to="/events" 
                 className="group bg-white text-primary-600 hover:bg-gray-50 px-10 py-4 rounded-xl font-semibold text-center transition-all duration-300 transform hover:scale-105 hover:shadow-xl border-2 border-transparent hover:border-primary-200 min-w-[180px]"
@@ -87,6 +164,88 @@ const HomePage = () => {
                   </svg>
                 </span>
               </Link>
+                </div>
+              </div>
+            </div>
+
+            {/* Image Section - 1 column (50%) */}
+            <div className="animate-fade-in-up delay-400">
+              <div className="relative">
+                <div className="w-full h-96 lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
+                  <img 
+                    src={image7} 
+                    alt="Digital Saheli empowering women entrepreneurs" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                {/* Decorative overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-2xl"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Video Grid Section */}
+      <section className="">
+        <div className="">
+
+          {/* 2x2 Video Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 ">
+            {/* Top Row - Video 1 */}
+            <div className="bg-white  overflow-hidden shadow-lg">
+              <video 
+                ref={addToRefs}
+                className="w-full h-64 object-cover"
+                muted
+                loop
+                playsInline
+              >
+                <source src={video1} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+
+            {/* Top Row - Video 2 */}
+            <div className="bg-white overflow-hidden shadow-lg">
+              <video 
+                ref={addToRefs}
+                className="w-full h-64 object-cover"
+                muted
+                loop
+                playsInline
+              >
+                <source src={video2} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+
+            {/* Bottom Row - Video 3 */}
+            <div className="bg-white  overflow-hidden shadow-lg">
+              <video 
+                ref={addToRefs}
+                className="w-full h-64 object-cover"
+                muted
+                loop
+                playsInline
+              >
+                <source src={video3} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+
+            {/* Bottom Row - Video 4 */}
+            <div className="bg-white  overflow-hidden shadow-lg">
+              <video 
+                ref={addToRefs}
+                className="w-full h-64 object-cover"
+                muted
+                loop
+                playsInline
+              >
+                <source src={video4} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
             </div>
           </div>
         </div>
@@ -99,45 +258,270 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Mission Section */}
-      <section className="section bg-gray-50">
+
+
+          {/* Image Gallery Section */}
+          <section className="pt-16 pb-8 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <div className="inline-block px-6 py-2 bg-primary-600 text-white rounded-full text-sm font-semibold mb-4">
-              OUR MANTRA
+            <div className="inline-block px-6 py-2 bg-gradient-to-r from-primary-600 to-secondary-600 text-white rounded-full text-sm font-semibold mb-4">
+              GALLERY
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Empowering through social media literacy</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Moments from Our Journey</h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto">
-              We are committed to bridging the digital divide and empowering women entrepreneurs from underserved communities
-              through comprehensive digital literacy programs, skill development, and sustainable livelihood creation.
+              Capturing the inspiring moments, workshops, and success stories from our Digital Saheli community.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div className="bg-white rounded-lg shadow-lg p-8 text-center border-l-4 border-primary-600">
-              <div className="w-20 h-20 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg className="w-10 h-10 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                </svg>
+          {/* Main Gallery Grid */}
+          <div className="space-y-8">
+            {/* Top Section - 1:1 Layout */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              {/* Left Side - Large Image */}
+              <div className="relative group overflow-hidden rounded-xl shadow-lg">
+                <img 
+                  src={image11} 
+                  alt="Digital Saheli workshop" 
+                  className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
+                />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">MISSION</h3>
-              <p className="text-gray-600">
-              Empower underserved women and girls with digital literacy and social media marketing skills, enabling them to become confident entrepreneurs, creators, and financially independent contributors in a digital-first economy.              </p>
+
+              {/* Right Side - 4 Images (2x2) */}
+              <div className="grid grid-cols-2 gap-4">
+                <div className="relative group overflow-hidden rounded-xl shadow-lg">
+                  <img 
+                    src={image12} 
+                    alt="Women entrepreneurs" 
+                    className="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <div className="relative group overflow-hidden rounded-xl shadow-lg">
+                  <img 
+                    src={image13} 
+                    alt="Training session" 
+                    className="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <div className="relative group overflow-hidden rounded-xl shadow-lg">
+                  <img 
+                    src={image14} 
+                    alt="Community meeting" 
+                    className="w-full h-36 object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <div className="relative group overflow-hidden rounded-xl shadow-lg">
+                  <img 
+                    src={image15} 
+                    alt="Digital skills workshop" 
+                    className="w-full h-36 object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+              </div>
             </div>
 
-            <div className="bg-white rounded-lg shadow-lg p-8 text-center border-l-4 border-secondary-600">
-              <div className="w-20 h-20 bg-secondary-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg className="w-10 h-10 text-secondary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                </svg>
+            {/* Middle Section - 8 Images with Infinite Sliding */}
+            <div className="relative overflow-hidden">
+              <div className="flex animate-slide-horizontal">
+                {/* First Set of Images */}
+                <div className="flex-shrink-0 w-1/8">
+                  <div className="relative group overflow-hidden">
+                    <img 
+                      src={image16} 
+                      alt="Success celebration" 
+                      className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                </div>
+                <div className="flex-shrink-0 w-1/8">
+                  <div className="relative group overflow-hidden">
+                    <img 
+                      src={image17} 
+                      alt="Women empowerment" 
+                      className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                </div>
+                <div className="flex-shrink-0 w-1/8">
+                  <div className="relative group overflow-hidden">
+                    <img 
+                      src={image18} 
+                      alt="Digital literacy" 
+                      className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                </div>
+                <div className="flex-shrink-0 w-1/8">
+                  <div className="relative group overflow-hidden">
+                    <img 
+                      src={image19} 
+                      alt="Gallery image" 
+                      className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                </div>
+                <div className="flex-shrink-0 w-1/8">
+                  <div className="relative group overflow-hidden">
+                    <img 
+                      src={image20} 
+                      alt="Gallery image" 
+                      className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                </div>
+                <div className="flex-shrink-0 w-1/8">
+                  <div className="relative group overflow-hidden">
+                    <img 
+                      src={image21} 
+                      alt="Gallery image" 
+                      className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                </div>
+                <div className="flex-shrink-0 w-1/8">
+                  <div className="relative group overflow-hidden">
+                    <img 
+                      src={image22} 
+                      alt="Gallery image" 
+                      className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                </div>
+                <div className="flex-shrink-0 w-1/8">
+                  <div className="relative group overflow-hidden">
+                    <img 
+                      src={image23} 
+                      alt="Gallery image" 
+                      className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                </div>
+                
+                {/* Duplicate Set for Infinite Effect */}
+                <div className="flex-shrink-0 w-1/8">
+                  <div className="relative group overflow-hidden">
+                    <img 
+                      src={image16} 
+                      alt="Success celebration" 
+                      className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                </div>
+                <div className="flex-shrink-0 w-1/8">
+                  <div className="relative group overflow-hidden">
+                    <img 
+                      src={image17} 
+                      alt="Women empowerment" 
+                      className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                </div>
+                  <div className="flex-shrink-0 w-1/8">
+                  <div className="relative group overflow-hidden">
+                    <img 
+                      src={image18} 
+                      alt="Digital literacy" 
+                      className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                </div>
+                <div className="flex-shrink-0 w-1/8 mx-3">
+                  <div className="relative group overflow-hidden rounded-xl shadow-lg">
+                    <img 
+                      src={image19} 
+                      alt="Gallery image" 
+                      className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                </div>
+                <div className="flex-shrink-0 w-1/8">
+                  <div className="relative group overflow-hidden">
+                    <img 
+                      src={image20} 
+                      alt="Gallery image" 
+                      className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                </div>
+                <div className="flex-shrink-0 w-1/8">
+                  <div className="relative group overflow-hidden">
+                    <img 
+                      src={image21} 
+                      alt="Gallery image" 
+                      className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                </div>
+                  <div className="flex-shrink-0 w-1/8">
+                  <div className="relative group overflow-hidden">
+                    <img 
+                      src={image22} 
+                      alt="Gallery image" 
+                      className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                </div>
+                <div className="flex-shrink-0 w-1/8">
+                  <div className="relative group overflow-hidden">
+                    <img 
+                      src={image23} 
+                      alt="Gallery image" 
+                      className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                </div>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">VISION</h3>
-              <p className="text-gray-600">
-              To create a digitally empowered ecosystem where women across urban and rural India can leverage technology to build sustainable businesses, tell their stories, and achieve financial freedom—unlocking the potential of women-led micro-entrepreneurship to transform communities and the economy.              </p>
+            </div>
+
+            {/* Bottom Section - 1:1 Layout (Reversed) */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              {/* Left Side - 4 Images (2x2) */}
+              <div className="grid grid-cols-2 gap-4">
+                <div className="relative group overflow-hidden rounded-xl shadow-lg">
+                  <img 
+                    src={image20} 
+                    alt="Gallery image" 
+                    className="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <div className="relative group overflow-hidden rounded-xl shadow-lg">
+                  <img 
+                    src={image21} 
+                    alt="Gallery image" 
+                    className="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <div className="relative group overflow-hidden rounded-xl shadow-lg">
+                  <img 
+                    src={image22} 
+                    alt="Gallery image" 
+                    className="w-full h-36 object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <div className="relative group overflow-hidden rounded-xl shadow-lg">
+                  <img 
+                    src={image23} 
+                    alt="Gallery image" 
+                    className="w-full h-36 object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+              </div>
+
+              {/* Right Side - Large Image */}
+              <div className="relative group overflow-hidden rounded-xl shadow-lg">
+                <img 
+                  src={image24} 
+                  alt="Gallery image" 
+                  className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
             </div>
           </div>
+
+
         </div>
       </section>
+
+
 
       {/* 5-Year Goals Section */}
       <section className="section bg-white">
@@ -309,7 +693,7 @@ const HomePage = () => {
             </div>
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop"
+                src={image23}
                 alt="Women entrepreneurs in training program"
                 className="w-full h-96 object-cover rounded-lg shadow-lg"
               />
