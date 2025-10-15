@@ -5,7 +5,6 @@ import Footer from './components/Footer.jsx'
 import ScrollToTop from './components/ScrollToTop.jsx'
 import HomePage from './pages/HomePage.jsx'
 import EventsPage from './pages/EventsPage.jsx'
-import TestimonialsPage from './pages/TestimonialsPage.jsx'
 import ContactPage from './pages/ContactPage.jsx'
 import ProjectPartnersPage from './pages/ProjectPartnersPage.jsx'
 
@@ -19,7 +18,6 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/events" element={<EventsPage />} />
-            <Route path="/testimonials" element={<TestimonialsPage />} />
             <Route path="/partners" element={<ProjectPartnersPage />} />
             <Route path="/contact" element={<ContactPage />} />
           </Routes>

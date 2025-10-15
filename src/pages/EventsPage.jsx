@@ -27,6 +27,8 @@ import galleryImage8 from '../assets/Image (24).jpg'
 import galleryImage9 from '../assets/Image (25).jpg'
 import mayaImage from '../assets/Maya.png'
 import saktiImage from '../assets/Sakti.png'
+import tutorial1 from '../assets/Tutorial 1_Intro to social media marketing.mp4'
+import tutorial2 from '../assets/Tutorial 2_Captions & hashtags.mp4'
 
 const EventsPage = () => {
   const events = [
@@ -277,7 +279,7 @@ const EventsPage = () => {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-gray-900">Links Foundation</h3>
+                  <h3 className="text-2xl font-bold text-gray-900">Links Foundation of Deaf Women</h3>
                   <p className="text-secondary-600 font-semibold text-lg">Bangalore</p>
                 </div>
               </div>
@@ -380,6 +382,58 @@ const EventsPage = () => {
                 </div>
               </div>
             </div>
+
+            {/* Digital Saheli Online Workshops */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
+              <div className="flex items-center mb-8">
+                <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mr-4">
+                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-gray-900">Digital Saheli Online Workshops</h3>
+                  <p className="text-purple-600 font-semibold text-lg">Zoom Platform</p>
+                </div>
+              </div>
+              
+              <div className="space-y-6">
+                <div className="bg-gradient-to-r from-purple-50 to-purple-100 rounded-xl p-6 border border-purple-200">
+                  <p className="text-gray-700 leading-relaxed">
+                    Several online workshops via zoom have been conducted by Navyaa and Digital Saheli. Tutorials on social media marketing focusing on the Instagram platform have been the major theme of these workshops. Constructive inputs and suggestions are provided regarding how to make reels gain more traction, filmography and use of aesthetics to capture audience attention, and finally the importance of the length of reels is explained.
+                  </p>
+                </div>
+                
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="relative rounded-xl overflow-hidden shadow-lg">
+                    <video 
+                      className="w-full h-84 object-cover"
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                    >
+                      <source src={tutorial1} type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                  
+                  <div className="relative rounded-xl overflow-hidden shadow-lg">
+                    <video 
+                      className="w-full h-84 object-cover"
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                    >
+                      <source src={tutorial2} type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
           </div>
 
 
@@ -393,7 +447,7 @@ const EventsPage = () => {
             <div className="inline-block px-6 py-2 bg-gradient-to-r from-primary-600 to-secondary-600 text-white rounded-full text-sm font-semibold mb-4">
               EVENT GALLERY
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Capturing Our Impact</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Seva Sadan Workshop & Link Foundation Workshop</h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto">
               See the moments that define our workshops, training sessions, and community events across India.
             </p>
@@ -517,7 +571,7 @@ const EventsPage = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">Want to Host an Event?</h2>
           <p className="text-xl text-white text-opacity-90 mb-8">
-            Partner with us to organize workshops, training sessions, or community events in your area.
+            Collaborate with us to organize workshops, training sessions, or community events in your area.
           </p>
           <Link to="/contact" className="bg-white text-primary-600 hover:bg-gray-100 px-8 py-4 rounded-lg font-semibold transition-colors">
             Contact Us

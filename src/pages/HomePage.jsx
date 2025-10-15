@@ -134,7 +134,7 @@ const HomePage = () => {
             
             <div className="animate-fade-in-up delay-500">
                   <p className="text-lg md:text-xl text-white text-opacity-95 leading-relaxed font-light">
-                This passion for connecting ideas to impact led me to launch <span className="font-semibold text-yellow-300">Digital Saheli</span>, an initiative that equips women entrepreneurs from underserved communities with essential digital skills. Through workshops on social media marketing and branding, I help women build not just stronger businesses, but also stronger identities as entrepreneurs. Seeing them grow their presence online and translate it into real opportunities has been one of the most rewarding parts of my journey.
+                This passion for connecting ideas to impact led me to launch <a href="https://www.instagram.com/digitalsahelibynavyaa/" className="font-semibold text-yellow-300 hover:text-yellow-200 transition-colors duration-300 underline">Digital Saheli</a>, an initiative that equips women entrepreneurs from underserved communities with essential digital skills. Through workshops on social media marketing and branding, I help women build not just stronger businesses, but also stronger identities as entrepreneurs. Seeing them grow their presence online and translate it into real opportunities has been one of the most rewarding parts of my journey.
               </p>
             </div>
           </div>
@@ -267,7 +267,7 @@ const HomePage = () => {
             <div className="inline-block px-6 py-2 bg-gradient-to-r from-primary-600 to-secondary-600 text-white rounded-full text-sm font-semibold mb-4">
               GALLERY
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Moments from Our Journey</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Seva Sadan Workshop & Link Foundation Workshop</h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto">
               Capturing the inspiring moments, workshops, and success stories from our Digital Saheli community.
             </p>
@@ -629,7 +629,7 @@ const HomePage = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8">
             <div className="bg-gradient-to-br from-primary-50 to-primary-100 rounded-lg p-8 text-center border border-primary-200">
               <div className="text-5xl font-bold text-primary-600 mb-2">500+</div>
               <div className="text-gray-700 font-semibold">Women Trained</div>
@@ -640,11 +640,7 @@ const HomePage = () => {
               <div className="text-gray-700 font-semibold">Training Programs</div>
               <div className="text-sm text-gray-600 mt-2">Community-led initiatives</div>
             </div>
-            <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-lg p-8 text-center border border-green-200">
-              <div className="text-5xl font-bold text-green-600 mb-2">92%</div>
-              <div className="text-gray-700 font-semibold">Success Rate</div>
-              <div className="text-sm text-gray-600 mt-2">Business growth achieved</div>
-            </div>
+
             <div className="bg-gradient-to-br from-yellow-50 to-yellow-100 rounded-lg p-8 text-center border border-yellow-200">
               <div className="text-5xl font-bold text-yellow-600 mb-2">17+</div>
               <div className="text-gray-700 font-semibold">Cities Covered</div>
@@ -654,41 +650,17 @@ const HomePage = () => {
 
           <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Success Stories</h3>
-              <div className="space-y-6">
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0">
-                    <svg className="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900">Women Entrepreneurs</h4>
-                    <p className="text-gray-600 text-sm">Over 1,200 women have successfully established online businesses through our digital literacy programs.</p>
-                  </div>
-                </div>
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-secondary-100 rounded-full flex items-center justify-center flex-shrink-0">
-                    <svg className="w-6 h-6 text-secondary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900">Economic Growth</h4>
-                    <p className="text-gray-600 text-sm">Average income increase of 180% among program participants within 6 months of completion.</p>
-                  </div>
-                </div>
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
-                    <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900">Community Impact</h4>
-                    <p className="text-gray-600 text-sm">Created 500+ self-help groups and cooperatives fostering collective growth and support.</p>
-                  </div>
-                </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">AIFDW Collaboration</h3>
+              <div className="space-y-4">
+                <p className="text-gray-700 leading-relaxed">
+                  Digital Saheli collaborated with the All India Foundation of Deaf Women and the training centers affiliated to AIFDW across 18 cities in India to strengthen their digital presence, so they could better enable income generation activities for the 3,700 women supported by their network.
+                </p>
+                <p className="text-gray-700 leading-relaxed">
+                  Several in-person and online workshops have been conducted to explain social media marketing to these women. Topics like how to create an Instagram business account, writing profile bio, post timings and use of hashtags were covered.
+                </p>
+                <p className="text-gray-700 leading-relaxed">
+                  Modules were made inclusive through augmentation of sign language.
+                </p>
               </div>
             </div>
             <div className="relative">
@@ -711,7 +683,7 @@ const HomePage = () => {
               GET INVOLVED
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              Join Our Mission
+              Be a Digital Saheli
             </h2>
             <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
               Be part of our mission to empower women entrepreneurs through digital literacy and community development.

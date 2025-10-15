@@ -62,7 +62,7 @@ const ContactPage = () => {
                   </div>
                   <div>
                     <p className="font-medium text-gray-900">Email</p>
-                    <p className="text-gray-600">info@digitalsaheli.com</p>
+                    <a href="mailto:digitalsahelibynavyaa@gmail.com" className="text-gray-600 hover:text-primary-600 transition-colors duration-300">info@digitalsaheli.com</a>
                   </div>
                 </div>
                 
@@ -75,7 +75,7 @@ const ContactPage = () => {
                   </div>
                   <div>
                     <p className="font-medium text-gray-900">Address</p>
-                    <p className="text-gray-600">New Delhi, India</p>
+                    <p className="text-gray-600">Mumbai, India</p>
                   </div>
                 </div>
               </div>
@@ -114,7 +114,7 @@ const ContactPage = () => {
                     </svg>
                   </div>
                   <div>
-                    <p className="font-medium text-gray-900">Partner</p>
+                    <p className="font-medium text-gray-900">Collaboration</p>
                     <p className="text-sm text-gray-600">Collaborate with us for community development</p>
                   </div>
                 </div>

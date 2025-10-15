@@ -190,7 +190,7 @@ const ProjectPartnersPage = () => {
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">Digital Saheli Partnership</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">Digital Saheli Collaboration</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Our collaboration focuses on bridging the digital literacy gap and enabling women to leverage social media for business growth
             </p>
@@ -294,7 +294,7 @@ const ProjectPartnersPage = () => {
                 <h3 className="text-2xl font-bold text-gray-900">Long-term Vision</h3>
               </div>
               <p className="text-lg text-gray-700 leading-relaxed">
-                Digital Saheli's partnership with AIFDW is backed by a shared vision of inclusive empowerment, scalable training, and sustainable economic impact, aiming to reach thousands of women across India over the next five years.
+                Digital Saheli's collaboration with AIFDW is backed by a shared vision of inclusive empowerment, scalable training, and sustainable economic impact, aiming to reach thousands of women across India over the next five years.
               </p>
             </div>
           </div>
@@ -302,7 +302,7 @@ const ProjectPartnersPage = () => {
           {/* Call to Action */}
           <div className="mt-16 text-center">
             <div className="bg-gradient-to-r from-primary-600 to-secondary-600 rounded-2xl p-8 text-white">
-              <h3 className="text-2xl font-bold mb-4">Join Our Mission</h3>
+              <h3 className="text-2xl font-bold mb-4">Be a Digital Saheli</h3>
               <p className="text-lg text-white text-opacity-90 max-w-3xl mx-auto mb-6">
                 Be part of creating inclusive digital empowerment for women across India
               </p>
@@ -311,7 +311,7 @@ const ProjectPartnersPage = () => {
                   href="/contact"
                   className="bg-white text-primary-600 hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold transition-colors"
                 >
-                  Partner with Us
+                  Collaborate with Us
                 </a>
                 <a
                   href="/events"
