@@ -19,7 +19,7 @@ const ProjectPartnersPage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <div className="inline-block px-6 py-2 bg-gradient-to-r from-primary-600 to-secondary-600 text-white rounded-full text-sm font-semibold mb-4">
-              SKILLING PARTNER
+              Collaboration
             </div>
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               All India Foundation for <span className="text-primary-600">Deaf Women</span>
@@ -40,10 +40,13 @@ const ProjectPartnersPage = () => {
             <div className="space-y-6">
               <h2 className="text-3xl font-bold text-gray-900 mb-6">About AIFDW</h2>
               <p className="text-lg text-gray-700 leading-relaxed">
-                Founded in <strong>1995</strong>, the All India Foundation for Deaf Women (AIFDW) is a pioneering non-profit organization dedicated to empowering women with hearing impairments across India.
+                <strong>Digital Saheli</strong>, empowers <strong>women entrepreneurs</strong> from underserved communities by training them in practical digital tools—<strong>social media, Canva, WhatsApp Business, and online storytelling</strong>—to help them grow their ventures, amplify their voices, and access economic opportunities.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
-                Over the past decades, AIFDW has positively impacted the lives of <strong>over 15,000 women</strong> across <strong>17 chapters nationwide</strong>, focusing on skills development, entrepreneurship, education, and social inclusion.
+                In an inspiring collaboration with the <strong>All India Foundation of Deaf Women (AIFDW)</strong>, <strong>Navyaa</strong> reimagined digital training to be <strong>truly inclusive</strong>. Together, they co-created <strong>sign language–integrated video modules</strong>, enabling deaf and hard-of-hearing women to learn digital skills independently and confidently.
+              </p>
+              <p className="text-lg text-gray-700 leading-relaxed">
+                The sign language interpretation in these modules was led by <strong>Ms. Anjali Rane from AIFDW</strong>, whose expertise ensured that each lesson was accessible, engaging, and easy to follow. These videos—available on <strong><a href="https://www.youtube.com/@Navyya-v8b" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:text-primary-700 underline">youtube</a></strong>—cover practical topics such as setting up Instagram business accounts, crafting effective bios, using hashtags strategically, and timing posts for maximum reach.
               </p>
             </div>
 
@@ -67,10 +70,19 @@ const ProjectPartnersPage = () => {
           {/* Bottom Section - Remaining Two Paragraphs */}
           <div className="space-y-6 mb-8">
             <p className="text-lg text-gray-700 leading-relaxed">
-              AIFDW works with women from diverse socio-economic backgrounds, including those from marginalized communities such as Scheduled Tribes (ST), Scheduled Castes (SC), Other Backward Classes (OBC), and urban slum populations. Many of these women face limited access to formal education, employment, and livelihood opportunities due to systemic barriers and social stigma. This has historically restricted their economic independence and participation in society.
+              Navyaa has conducted workshops for 17 AIFDW chapters across India, including sessions at the Bombay Foundation of Deaf Women, where participants created promotional reels for their exhibitions—attended by guests like Poonam Sinha and Manushi Chillar.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
-              Through its initiatives, AIFDW equips women with vocational skills, entrepreneurship training, and social support networks. The collaboration with Digital Saheli focuses on bridging the digital literacy gap and enabling women to leverage social media for small business growth, storytelling, and income generation.
+              To ensure sustainability, Navyaa also trained two Digital Saheli Leaders from the Deaf Women's Association:
+            </p>
+            <p className="text-lg text-gray-700 leading-relaxed">
+              <strong>Purba</strong>, a community leader-in-training specializing in social media marketing, brings lived experience and cultural insight to make the program inclusive and relatable.
+            </p>
+            <p className="text-lg text-gray-700 leading-relaxed">
+              <strong>Ashwini</strong>, focused on guiding women in setting up online storefronts and building digital brands, champions economic independence and accessibility within the deaf community.
+            </p>
+            <p className="text-lg text-gray-700 leading-relaxed">
+              Through this skilling partnership, Digital Saheli and AIFDW are redefining what digital empowerment looks like—where innovation meets inclusion, and every woman's voice finds a platform.
             </p>
           </div>
 

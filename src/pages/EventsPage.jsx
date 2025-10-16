@@ -279,7 +279,7 @@ const EventsPage = () => {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-gray-900">Links Foundation of Deaf Women</h3>
+                  <h3 className="text-2xl font-bold text-gray-900">Links Foundation</h3>
                   <p className="text-secondary-600 font-semibold text-lg">Bangalore</p>
                 </div>
               </div>
@@ -336,7 +336,7 @@ const EventsPage = () => {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-gray-900">Bombay Foundation</h3>
+                  <h3 className="text-2xl font-bold text-gray-900">Bombay Foundation of deaf women</h3>
                   <p className="text-green-600 font-semibold text-lg">Mumbai</p>
                 </div>
               </div>
