@@ -3,14 +3,7 @@ import { Link } from 'react-router-dom'
 import ImageSlider from '../components/ImageSlider.jsx'
 import image1 from '../assets/Image (1).jpg'
 import image2 from '../assets/Image (2).jpg'
-import image3 from '../assets/Image (3).jpg'
-import image4 from '../assets/Image (4).jpg'
-import image5 from '../assets/Image (5).jpg'
-import image6 from '../assets/Image (6).jpg'
 import image7 from '../assets/Image (7).jpg'
-import image8 from '../assets/Image (8).jpg'
-import image9 from '../assets/Image (9).jpg'
-import image10 from '../assets/Image (10).jpg'
 import image11 from '../assets/Image (11).jpg'
 import image12 from '../assets/Image (12).jpg'
 import image13 from '../assets/Image (13).jpg'
@@ -26,14 +19,14 @@ import image22 from '../assets/Image (22).jpg'
 import image23 from '../assets/Image (23).jpg'
 import image24 from '../assets/Image (24).jpg'
 import image25 from '../assets/Image (25).jpg'
+import maya from '../assets/Maya.png'
+import sakti from '../assets/Sakti.png'
 import video1 from '../assets/video (1).mp4'
 import video2 from '../assets/video (2).mp4'
 import video3 from '../assets/video (3).mp4'
 import video4 from '../assets/video (4).mp4'
-import screenRec1 from '../assets/ScreenRec (1).mp4'
-import screenRec2 from '../assets/ScreenRec (2).mp4'
-import screenRec3 from '../assets/ScreenRec (3).mp4'
-import screenRec4 from '../assets/ScreenRec (4).mp4'
+import seva3 from '../assets/seva3.jpg'
+import link3 from '../assets/link3.jpg'
 
 const HomePage = () => {
   const videoRefs = useRef([])
@@ -96,6 +89,15 @@ const HomePage = () => {
     }
   ]
 
+  // Quick link cards (5 cards)
+  const cardItems = [
+    { title: 'Maya Aunty', url: '/events', image: maya, external: false },
+    { title: 'Shakti Bachat', url: '/events', image: sakti, external: false },
+    { title: 'Seva Sadan', url: '/events#seva-sadan', image: seva3, external: false },
+    { title: 'Links Foundation', url: '/events#links-foundation', image: link3, external: false },
+    { title: 'Bombay Foundation', url: '/events#bombay-foundation', image: image12, external: false }
+  ]
+
   return (
     <div className="min-h-screen">
 
@@ -106,7 +108,7 @@ const HomePage = () => {
         <div className="absolute inset-0 bg-black bg-opacity-10"></div>
         <div className="absolute top-10 left-10 w-20 h-20 bg-yellow-300 bg-opacity-20 rounded-full animate-rotate"></div>
         <div className="absolute bottom-10 right-10 w-32 h-32 bg-white bg-opacity-10 rounded-full animate-float"></div>
-        
+
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
 
           {/* Main Title - Left with Right-side Social/Events Panel (refined) */}
@@ -125,14 +127,14 @@ const HomePage = () => {
 
                 {/* Buttons below title */}
                 <div className="flex flex-col sm:flex-row gap-4 mt-8">
-                  <Link 
-                    to="/contact" 
+                  <Link
+                    to="/contact"
                     className="inline-flex items-center justify-center bg-yellow-300 text-primary-700 px-8 py-4 rounded-xl font-semibold text-lg shadow-lg hover:bg-yellow-200 transition-all duration-300"
                   >
                     Get Involved
                   </Link>
-                  <Link 
-                    to="/events" 
+                  <Link
+                    to="/events"
                     className="inline-flex items-center justify-center border-2 border-white text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-white hover:text-primary-600 transition-all duration-300"
                   >
                     View Events
@@ -143,9 +145,9 @@ const HomePage = () => {
               {/* Right: Four horizontal tabs */}
               <div className="lg:w-[600px]">
                 <div className="grid grid-cols-2 gap-4">
-                  <a 
-                    href="https://www.youtube.com/@Navyya-v8b" 
-                    target="_blank" 
+                  <a
+                    href="https://www.youtube.com/@Navyya-v8b"
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="group bg-white/10 hover:bg-white/15 backdrop-blur-sm rounded-xl p-4 transition-all duration-300"
                   >
@@ -158,9 +160,9 @@ const HomePage = () => {
                     <p className="text-sm text-gray-300">Watch our latest training videos and success stories</p>
                   </a>
 
-                  <a 
-                    href="https://www.instagram.com/digitalsahelibynavyaa/" 
-                    target="_blank" 
+                  <a
+                    href="https://www.instagram.com/digitalsahelibynavyaa/"
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="group bg-white/10 hover:bg-white/15 backdrop-blur-sm rounded-xl p-4 transition-all duration-300"
                   >
@@ -175,9 +177,9 @@ const HomePage = () => {
                     <p className="text-sm text-gray-300">Follow our daily updates and community stories</p>
                   </a>
 
-                  <a 
-                    href="https://www.aifdw.in/" 
-                    target="_blank" 
+                  <a
+                    href="https://www.aifdw.in/"
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="group bg-white/10 hover:bg-white/15 backdrop-blur-sm rounded-xl p-4 transition-all duration-300"
                   >
@@ -190,7 +192,7 @@ const HomePage = () => {
                     <p className="text-sm text-gray-300">Explore our collaboration for inclusive growth</p>
                   </a>
 
-                  <Link 
+                  <Link
                     to="/events"
                     className="group bg-white/10 hover:bg-white/15 backdrop-blur-sm rounded-xl p-4 transition-all duration-300"
                   >
@@ -211,20 +213,20 @@ const HomePage = () => {
             {/* Story Content - 1 column (50%) */}
             <div className="space-y-8">
 
-          {/* Story Content */}
+              {/* Story Content */}
               <div className="space-y-6">
-            <div className="animate-fade-in-up delay-300">
+                <div className="animate-fade-in-up delay-300">
                   <p className="text-lg md:text-xl text-white text-opacity-95 leading-relaxed font-light">
-                I'm <span className="font-semibold text-yellow-300">Navyaa</span>, and my journey so far has been shaped by curiosity—curiosity about how people think, choose, and act, and how the stories we tell influence those choices. I analyze media, design, marketing, and performance, not just as creative tools but as forces that guide human behavior. Storytelling, for me, is more than expression—it is structure, influence, and connection.
-              </p>
-            </div>
-            
-            <div className="animate-fade-in-up delay-500">
+                    I'm <span className="font-semibold text-yellow-300">Navyaa</span>, and my journey so far has been shaped by curiosity—curiosity about how people think, choose, and act, and how the stories we tell influence those choices. I analyze media, design, marketing, and performance, not just as creative tools but as forces that guide human behavior. Storytelling, for me, is more than expression—it is structure, influence, and connection.
+                  </p>
+                </div>
+
+                <div className="animate-fade-in-up delay-500">
                   <p className="text-lg md:text-xl text-white text-opacity-95 leading-relaxed font-light">
-                This passion for connecting ideas to impact led me to launch <a href="https://www.instagram.com/digitalsahelibynavyaa/" className="font-semibold text-yellow-300 hover:text-yellow-200 transition-colors duration-300 underline">Digital Saheli</a>, an initiative that equips women entrepreneurs from underserved communities with essential digital skills. Through workshops on social media marketing and branding, I help women build not just stronger businesses, but also stronger identities as entrepreneurs. Seeing them grow their presence online and translate it into real opportunities has been one of the most rewarding parts of my journey.
-              </p>
-            </div>
-          </div>
+                    This passion for connecting ideas to impact led me to launch <a href="https://www.instagram.com/digitalsahelibynavyaa/" className="font-semibold text-yellow-300 hover:text-yellow-200 transition-colors duration-300 underline">Digital Saheli</a>, an initiative that equips women entrepreneurs from underserved communities with essential digital skills. Through workshops on social media marketing and branding, I help women build not just stronger businesses, but also stronger identities as entrepreneurs. Seeing them grow their presence online and translate it into real opportunities has been one of the most rewarding parts of my journey.
+                  </p>
+                </div>
+              </div>
 
 
             </div>
@@ -233,9 +235,9 @@ const HomePage = () => {
             <div className="animate-fade-in-up delay-400">
               <div className="relative">
                 <div className="w-full h-96 lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
-                  <img 
-                    src={image7} 
-                    alt="Digital Saheli empowering women entrepreneurs" 
+                  <img
+                    src={image7}
+                    alt="Digital Saheli empowering women entrepreneurs"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -255,7 +257,7 @@ const HomePage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 ">
             {/* Top Row - Video 1 */}
             <div className="bg-white  overflow-hidden shadow-lg">
-              <video 
+              <video
                 ref={addToRefs}
                 className="w-full h-64 object-cover"
                 muted
@@ -269,7 +271,7 @@ const HomePage = () => {
 
             {/* Top Row - Video 2 */}
             <div className="bg-white overflow-hidden shadow-lg">
-              <video 
+              <video
                 ref={addToRefs}
                 className="w-full h-64 object-cover"
                 muted
@@ -283,7 +285,7 @@ const HomePage = () => {
 
             {/* Bottom Row - Video 3 */}
             <div className="bg-white  overflow-hidden shadow-lg">
-              <video 
+              <video
                 ref={addToRefs}
                 className="w-full h-64 object-cover"
                 muted
@@ -297,7 +299,7 @@ const HomePage = () => {
 
             {/* Bottom Row - Video 4 */}
             <div className="bg-white  overflow-hidden shadow-lg">
-              <video 
+              <video
                 ref={addToRefs}
                 className="w-full h-64 object-cover"
                 muted
@@ -321,8 +323,8 @@ const HomePage = () => {
 
 
 
-          {/* Image Gallery Section */}
-          <section className="pt-16 pb-8 bg-white">
+      {/* Image Gallery Section */}
+      <section className="pt-16 pb-8 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <div className="inline-block px-6 py-2 bg-gradient-to-r from-primary-600 to-secondary-600 text-white rounded-full text-sm font-semibold mb-4">
@@ -340,9 +342,9 @@ const HomePage = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
               {/* Left Side - Large Image */}
               <div className="relative group overflow-hidden rounded-xl shadow-lg">
-                <img 
-                  src={image11} 
-                  alt="Digital Saheli workshop" 
+                <img
+                  src={image11}
+                  alt="Digital Saheli workshop"
                   className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
@@ -350,30 +352,30 @@ const HomePage = () => {
               {/* Right Side - 4 Images (2x2) */}
               <div className="grid grid-cols-2 gap-4">
                 <div className="relative group overflow-hidden rounded-xl shadow-lg">
-                  <img 
-                    src={image12} 
-                    alt="Women entrepreneurs" 
+                  <img
+                    src={image12}
+                    alt="Women entrepreneurs"
                     className="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
                 <div className="relative group overflow-hidden rounded-xl shadow-lg">
-                  <img 
-                    src={image13} 
-                    alt="Training session" 
+                  <img
+                    src={image13}
+                    alt="Training session"
                     className="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
                 <div className="relative group overflow-hidden rounded-xl shadow-lg">
-                  <img 
-                    src={image14} 
-                    alt="Community meeting" 
+                  <img
+                    src={image14}
+                    alt="Community meeting"
                     className="w-full h-36 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
                 <div className="relative group overflow-hidden rounded-xl shadow-lg">
-                  <img 
-                    src={image15} 
-                    alt="Digital skills workshop" 
+                  <img
+                    src={image15}
+                    alt="Digital skills workshop"
                     className="w-full h-36 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
@@ -386,146 +388,146 @@ const HomePage = () => {
                 {/* First Set of Images */}
                 <div className="flex-shrink-0 w-1/8">
                   <div className="relative group overflow-hidden">
-                    <img 
-                      src={image16} 
-                      alt="Success celebration" 
+                    <img
+                      src={image16}
+                      alt="Success celebration"
                       className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>
                 </div>
                 <div className="flex-shrink-0 w-1/8">
                   <div className="relative group overflow-hidden">
-                    <img 
-                      src={image17} 
-                      alt="Women empowerment" 
+                    <img
+                      src={image17}
+                      alt="Women empowerment"
                       className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>
                 </div>
                 <div className="flex-shrink-0 w-1/8">
                   <div className="relative group overflow-hidden">
-                    <img 
-                      src={image18} 
-                      alt="Digital literacy" 
+                    <img
+                      src={image18}
+                      alt="Digital literacy"
                       className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>
                 </div>
                 <div className="flex-shrink-0 w-1/8">
                   <div className="relative group overflow-hidden">
-                    <img 
-                      src={image19} 
-                      alt="Gallery image" 
+                    <img
+                      src={image19}
+                      alt="Gallery image"
                       className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>
                 </div>
                 <div className="flex-shrink-0 w-1/8">
                   <div className="relative group overflow-hidden">
-                    <img 
-                      src={image20} 
-                      alt="Gallery image" 
+                    <img
+                      src={image20}
+                      alt="Gallery image"
                       className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>
                 </div>
                 <div className="flex-shrink-0 w-1/8">
                   <div className="relative group overflow-hidden">
-                    <img 
-                      src={image21} 
-                      alt="Gallery image" 
+                    <img
+                      src={image21}
+                      alt="Gallery image"
                       className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>
                 </div>
                 <div className="flex-shrink-0 w-1/8">
                   <div className="relative group overflow-hidden">
-                    <img 
-                      src={image22} 
-                      alt="Gallery image" 
+                    <img
+                      src={image22}
+                      alt="Gallery image"
                       className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>
                 </div>
                 <div className="flex-shrink-0 w-1/8">
                   <div className="relative group overflow-hidden">
-                    <img 
-                      src={image23} 
-                      alt="Gallery image" 
+                    <img
+                      src={image23}
+                      alt="Gallery image"
                       className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>
                 </div>
-                
+
                 {/* Duplicate Set for Infinite Effect */}
                 <div className="flex-shrink-0 w-1/8">
                   <div className="relative group overflow-hidden">
-                    <img 
-                      src={image16} 
-                      alt="Success celebration" 
+                    <img
+                      src={image16}
+                      alt="Success celebration"
                       className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>
                 </div>
                 <div className="flex-shrink-0 w-1/8">
                   <div className="relative group overflow-hidden">
-                    <img 
-                      src={image17} 
-                      alt="Women empowerment" 
+                    <img
+                      src={image17}
+                      alt="Women empowerment"
                       className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>
                 </div>
-                  <div className="flex-shrink-0 w-1/8">
+                <div className="flex-shrink-0 w-1/8">
                   <div className="relative group overflow-hidden">
-                    <img 
-                      src={image18} 
-                      alt="Digital literacy" 
+                    <img
+                      src={image18}
+                      alt="Digital literacy"
                       className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>
                 </div>
                 <div className="flex-shrink-0 w-1/8 mx-3">
                   <div className="relative group overflow-hidden rounded-xl shadow-lg">
-                    <img 
-                      src={image19} 
-                      alt="Gallery image" 
+                    <img
+                      src={image19}
+                      alt="Gallery image"
                       className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>
                 </div>
                 <div className="flex-shrink-0 w-1/8">
                   <div className="relative group overflow-hidden">
-                    <img 
-                      src={image20} 
-                      alt="Gallery image" 
+                    <img
+                      src={image20}
+                      alt="Gallery image"
                       className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>
                 </div>
                 <div className="flex-shrink-0 w-1/8">
                   <div className="relative group overflow-hidden">
-                    <img 
-                      src={image21} 
-                      alt="Gallery image" 
-                      className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-                  </div>
-                </div>
-                  <div className="flex-shrink-0 w-1/8">
-                  <div className="relative group overflow-hidden">
-                    <img 
-                      src={image22} 
-                      alt="Gallery image" 
+                    <img
+                      src={image21}
+                      alt="Gallery image"
                       className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>
                 </div>
                 <div className="flex-shrink-0 w-1/8">
                   <div className="relative group overflow-hidden">
-                    <img 
-                      src={image23} 
-                      alt="Gallery image" 
+                    <img
+                      src={image22}
+                      alt="Gallery image"
+                      className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                </div>
+                <div className="flex-shrink-0 w-1/8">
+                  <div className="relative group overflow-hidden">
+                    <img
+                      src={image23}
+                      alt="Gallery image"
                       className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>
@@ -538,30 +540,30 @@ const HomePage = () => {
               {/* Left Side - 4 Images (2x2) */}
               <div className="grid grid-cols-2 gap-4">
                 <div className="relative group overflow-hidden rounded-xl shadow-lg">
-                  <img 
-                    src={image20} 
-                    alt="Gallery image" 
+                  <img
+                    src={image20}
+                    alt="Gallery image"
                     className="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
                 <div className="relative group overflow-hidden rounded-xl shadow-lg">
-                  <img 
-                    src={image21} 
-                    alt="Gallery image" 
+                  <img
+                    src={image21}
+                    alt="Gallery image"
                     className="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
                 <div className="relative group overflow-hidden rounded-xl shadow-lg">
-                  <img 
-                    src={image22} 
-                    alt="Gallery image" 
+                  <img
+                    src={image22}
+                    alt="Gallery image"
                     className="w-full h-36 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
                 <div className="relative group overflow-hidden rounded-xl shadow-lg">
-                  <img 
-                    src={image23} 
-                    alt="Gallery image" 
+                  <img
+                    src={image23}
+                    alt="Gallery image"
                     className="w-full h-36 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
@@ -569,9 +571,9 @@ const HomePage = () => {
 
               {/* Right Side - Large Image */}
               <div className="relative group overflow-hidden rounded-xl shadow-lg">
-                <img 
-                  src={image24} 
-                  alt="Gallery image" 
+                <img
+                  src={image24}
+                  alt="Gallery image"
                   className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
@@ -581,6 +583,8 @@ const HomePage = () => {
 
         </div>
       </section>
+
+
 
 
 
@@ -680,48 +684,66 @@ const HomePage = () => {
       {/* Impact Section */}
       <section className="section bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <div className="inline-block px-6 py-2 bg-secondary-600 text-white rounded-full text-sm font-semibold mb-4">
-              OUR IMPACT
+
+          {/* Quick Explore Cards (5 clickable image cards) */}
+          <div className="py-12 bg-gray-50">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="text-center mb-8">
+                <h3 className="text-2xl font-bold text-gray-900">Explore</h3>
+                <p className="text-gray-600">Quick links to important pages and resources</p>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-6">
+                {cardItems.map((card, idx) => {
+                  const CardInner = (
+                    <div className="relative overflow-hidden rounded-lg shadow-lg group h-40">
+                      <img src={card.image} alt={card.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                      <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
+                        <span className="text-white text-lg font-semibold">{card.title}</span>
+                      </div>
+                    </div>
+                  )
+
+                  // External links (third-party) should open in a new tab.
+                  if (card.external) {
+                    return (
+                      <a key={idx} href={card.url} target="_blank" rel="noopener noreferrer" aria-label={card.title}>
+                        {CardInner}
+                      </a>
+                    )
+                  }
+
+                  // If the URL contains a hash (fragment), use a plain anchor so the browser navigates to the fragment (e.g. /events#seva-sadan).
+                  if (card.url.includes('#')) {
+                    return (
+                      <a key={idx} href={card.url} aria-label={card.title}>
+                        {CardInner}
+                      </a>
+                    )
+                  }
+
+                  // Default internal navigation via react-router Link
+                  return (
+                    <Link key={idx} to={card.url} aria-label={card.title}>
+                      {CardInner}
+                    </Link>
+                  )
+                })}
+              </div>
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Making a Difference</h2>
-            <p className="text-xl text-gray-600 max-w-4xl mx-auto">
-            Digital Saheli has successfully transformed lives and communities across multiple regions, creating measurable impact in women's economic empowerment and digital inclusion.
-            </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8">
-            <div className="bg-gradient-to-br from-primary-50 to-primary-100 rounded-lg p-8 text-center border border-primary-200">
-              <div className="text-5xl font-bold text-primary-600 mb-2">500+</div>
-              <div className="text-gray-700 font-semibold">Women Trained</div>
-              <div className="text-sm text-gray-600 mt-2">Across 3 partner orgs</div>
-            </div>
-            <div className="bg-gradient-to-br from-secondary-50 to-secondary-100 rounded-lg p-8 text-center border border-secondary-200">
-              <div className="text-5xl font-bold text-secondary-600 mb-2">20+</div>
-              <div className="text-gray-700 font-semibold">Training Programs</div>
-              <div className="text-sm text-gray-600 mt-2">Community-led initiatives</div>
-            </div>
-
-            <div className="bg-gradient-to-br from-yellow-50 to-yellow-100 rounded-lg p-8 text-center border border-yellow-200">
-              <div className="text-5xl font-bold text-yellow-600 mb-2">17+</div>
-              <div className="text-gray-700 font-semibold">Cities Covered</div>
-              <div className="text-sm text-gray-600 mt-2">Pan-India presence</div>
-            </div>
-          </div>
 
           <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h3 className="text-2xl font-bold text-gray-900 mb-6">AIFDW Collaboration</h3>
               <div className="space-y-4">
                 <p className="text-gray-700 leading-relaxed">
-                  Digital Saheli collaborated with the All India Foundation of Deaf Women and the training centers affiliated to AIFDW across 18 cities in India to strengthen their digital presence, so they could better enable income generation activities for the 3,700 women supported by their network.
-                </p>
+                  Digital Saheli collaborated with the All India Foundation of Deaf Women (AIFDW) and their affiliated training centres across 17 cities in India. The aim of this collaboration is to strengthen the digital presence, so they could better enable income generation activities for the 3,700 hearing-impaired women supported by their network.                </p>
                 <p className="text-gray-700 leading-relaxed">
-                  Several in-person and online workshops have been conducted to explain social media marketing to these women. Topics like how to create an Instagram business account, writing profile bio, post timings and use of hashtags were covered.
-                </p>
+                  Several in-person and online workshops have been conducted to inform about social media marketing through practical learning modules, covering everything from creating Instagram profiles to analyzing viewership patterns and crafting brand narratives.                </p>
                 <p className="text-gray-700 leading-relaxed">
-                  Modules were made inclusive through augmentation of sign language.
-                </p>
+                  Navyaa helped participants think like business owners — guiding them to identify their target audiences, position their products, and measure engagement metrics. She worked with the AIFDW members to integrate sign language into the modules, ensuring that participants could fully engage and benefit from the sessions.                </p>
               </div>
             </div>
             <div className="relative">
@@ -730,7 +752,7 @@ const HomePage = () => {
                 alt="Women entrepreneurs in training program"
                 className="w-full h-96 object-cover rounded-lg shadow-lg"
               />
-             
+
             </div>
           </div>
         </div>

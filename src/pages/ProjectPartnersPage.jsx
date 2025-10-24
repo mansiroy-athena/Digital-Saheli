@@ -1,14 +1,4 @@
 import React from 'react'
-import partnerImage1 from '../assets/Image (1).jpg'
-import partnerImage2 from '../assets/Image (2).jpg'
-import partnerImage3 from '../assets/Image (3).jpg'
-import partnerImage4 from '../assets/Image (4).jpg'
-import partnerImage5 from '../assets/Image (5).jpg'
-import partnerImage6 from '../assets/Image (6).jpg'
-import partnerImage7 from '../assets/Image (7).jpg'
-import partnerImage8 from '../assets/Image (8).jpg'
-import partnerImage9 from '../assets/Image (9).jpg'
-import partnerImage10 from '../assets/Image (10).jpg'
 import screenRec1 from '../assets/ScreenRec (1).mp4'
 
 const ProjectPartnersPage = () => {
@@ -35,18 +25,16 @@ const ProjectPartnersPage = () => {
       <section className="py-8 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Top Section - Heading + First Two Paragraphs + Video */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center mb-6">
             {/* Left Side - Heading + First Two Paragraphs */}
-            <div className="space-y-6">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">About AIFDW</h2>
-              <p className="text-lg text-gray-700 leading-relaxed">
-                <strong>Digital Saheli</strong>, empowers <strong>women entrepreneurs</strong> from underserved communities by training them in practical digital tools—<strong>social media, Canva, WhatsApp Business, and online storytelling</strong>—to help them grow their ventures, amplify their voices, and access economic opportunities.
-              </p>
-              <p className="text-lg text-gray-700 leading-relaxed">
-                In an inspiring collaboration with the <strong>All India Foundation of Deaf Women (AIFDW)</strong>, <strong>Navyaa</strong> reimagined digital training to be <strong>truly inclusive</strong>. Together, they co-created <strong>sign language–integrated video modules</strong>, enabling deaf and hard-of-hearing women to learn digital skills independently and confidently.
-              </p>
-              <p className="text-lg text-gray-700 leading-relaxed">
-                The sign language interpretation in these modules was led by <strong>Ms. Anjali Rane from AIFDW</strong>, whose expertise ensured that each lesson was accessible, engaging, and easy to follow. These videos—available on <strong><a href="https://www.youtube.com/@Navyya-v8b" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:text-primary-700 underline">youtube</a></strong>—cover practical topics such as setting up Instagram business accounts, crafting effective bios, using hashtags strategically, and timing posts for maximum reach.
+            <div className="space-y-2">
+              <h3 className="text-xl font-bold text-gray-900">About AIFDW</h3>
+              <p className="text-md text-gray-700 ">
+                Founded in 1995, the All India Foundation for Deaf Women (AIFDW) is a pioneering non-profit organization dedicated to empowering women with hearing impairments across India. Over the past decades, AIFDW has positively impacted the lives of over 15,000 women across 17 chapters nationwide, focusing on skills development, entrepreneurship, education, and social inclusion.              </p>
+              <h3 className="text-xl font-bold text-gray-900">Collaboration with Digital Saheli:</h3>
+              <p className="text-md text-gray-700">
+                Digital Saheli, empowers women entrepreneurs from underserved communities by training them in practical digital tools. In an inspiring collaboration with the AIFDW, Navyaa reimagined digital training to be truly inclusive. Together, they co-created sign language–integrated video modules, enabling deaf and hard-of-hearing women to learn digital skills independently and confidently.
+                The sign language interpretation in these modules was led by Ms. Anjali Rane from AIFDW, whose expertise ensured that each lesson was accessible, engaging, and easy to follow. These videos—available on youtube—cover practical topics such as setting up Instagram business accounts, crafting effective bios, using hashtags strategically, and timing posts for maximum reach.
               </p>
             </div>
 
@@ -68,48 +56,18 @@ const ProjectPartnersPage = () => {
           </div>
 
           {/* Bottom Section - Remaining Two Paragraphs */}
-          <div className="space-y-6 mb-8">
-            <p className="text-lg text-gray-700 leading-relaxed">
-              Navyaa has conducted workshops for 17 AIFDW chapters across India, including sessions at the Bombay Foundation of Deaf Women, where participants created promotional reels for their exhibitions—attended by guests like Poonam Sinha and Manushi Chillar.
-            </p>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              To ensure sustainability, Navyaa also trained two Digital Saheli Leaders from the Deaf Women's Association:
-            </p>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              <strong>Purba</strong>, a community leader-in-training specializing in social media marketing, brings lived experience and cultural insight to make the program inclusive and relatable.
-            </p>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              <strong>Ashwini</strong>, focused on guiding women in setting up online storefronts and building digital brands, champions economic independence and accessibility within the deaf community.
-            </p>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              Through this skilling partnership, Digital Saheli and AIFDW are redefining what digital empowerment looks like—where innovation meets inclusion, and every woman's voice finds a platform.
+          <div className="space-y-2 mb-8">
+            <h3 className="text-xl font-bold text-gray-900">Our Vision Together</h3>
+            <p className="text-md text-gray-700">
+              Navyaa conducted in person as well as virtual sessions via Zoom for the centre heads of all AIFDW-affiliated training centers across 17 cities in India to strengthen their digital presence, so they could better enable income generation activities for the 3,700 women supported by our network. The online training modules delivered along with the sign language instructors from AIFDW have been of immense value to more broadly the hearing-impaired community.
+              Working closely with the Founding Head, Navyaa developed targeted marketing strategies for  participation in the IMC Ladies’ Wing Women Entrepreneurs’ Exhibition 2025 which would also be implemented in future workshops and exhibitions.
             </p>
           </div>
 
-          {/* Statistics Cards */}
-          <div className="bg-white rounded-2xl p-8 shadow-lg">
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 text-center">
-              <div className="bg-primary-50 rounded-xl p-6">
-                <div className="text-3xl font-bold text-primary-600 mb-2">15,000+</div>
-                <p className="text-gray-700 font-medium">Women Impacted</p>
-              </div>
-              <div className="bg-secondary-50 rounded-xl p-6">
-                <div className="text-3xl font-bold text-secondary-600 mb-2">17</div>
-                <p className="text-gray-700 font-medium">Chapters Nationwide</p>
-              </div>
-              <div className="bg-green-50 rounded-xl p-6">
-                <div className="text-3xl font-bold text-green-600 mb-2">1995</div>
-                <p className="text-gray-700 font-medium">Founded</p>
-              </div>
-              <div className="bg-purple-50 rounded-xl p-6">
-                <div className="text-3xl font-bold text-purple-600 mb-2">28+</div>
-                <p className="text-gray-700 font-medium">Years of Service</p>
-              </div>
-            </div>
-          </div>
+          
         </div>
       </section>
-
+     
       {/* Video Cards Section */}
       <section className="py-8 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -197,7 +155,59 @@ const ProjectPartnersPage = () => {
           </div>
         </div>
       </section>
-
+       {/* Video Cards Grid (6 cards, 3 per row) */}
+          <div className="bg-white rounded-2xl p-8 shadow-lg">
+            <h1 className="text-4xl font-bold text-gray-900 text-center p-8">How to make Instagram Business Account?</h1>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {[
+                {
+                  title: 'Instagram Business Account Management',
+                  video: screenRec1,
+                  desc: 'Navyaa led a session on creating and managing Instagram business accounts, emphasizing the importance of analytics, community building, and credibility. She demonstrated how to switch an account to a professional business account, highlighting features like insights, ads, and the ability to create an Instagram shop. Participants were instructed to follow along on their own accounts, ensuring they used a business or center account rather than a personal one. Navyaa also explained how to connect a Facebook page for future use and mentioned the benefits of displaying contact information to facilitate customer communication.'
+                },
+                {
+                  title: 'Instagram Professional Dashboard Overview',
+                  video: screenRec1,
+                  desc: 'Navyaa explained the professional dashboard features on Instagram, including insights into content performance, follower engagement, and trending audio options. She emphasized the importance of analyzing top-performing content to replicate success and suggested creating a variety of content types initially, such as interviews and educational reels. Mimi shared her experience with having both a personal and business account, and Jude Lewis asked about licensing requirements for selling products in markets, to which Navyaa responded that she was unsure about the specific protocols but confirmed that Instagram sales do not require a license.'
+                },
+                {
+                  title: 'Instagram Posting Strategy Best Practices',
+                  video: screenRec1,
+                  desc: 'Navyaa presented information on optimal Instagram posting times and the importance of a consistent posting schedule. She explained that posts should be timed for when users are most active, such as Monday through Friday from 9-11 AM and 6-8 PM, and on weekends from 10 AM to late afternoon. Navyaa emphasized that consistent posting helps prevent Instagram from shadow banning accounts and recommended posting 2-3 times per week using a content calendar.'
+                },
+                {
+                  title: 'Instagram Hashtag Strategy Insights',
+                  video: screenRec1,
+                  desc: 'Navyaa explained the importance of hashtags in Instagram posts, describing how they help target content to specific audiences and create community engagement. She demonstrated this with examples, including the use of city-specific hashtags to reach local audiences and relevant hashtags like "cancer awareness" to align with social causes. Navyaa also shared a before-and-after comparison of reels created for a client, inviting participants to discuss the improvements made after working with her team.'
+                },
+                {
+                  title: 'Failed Reels: Engagement Insights',
+                  video: screenRec1,
+                  desc: 'Navyaa discussed the effectiveness of two reels promoting an IMC event stall. She explained that the first reel, which was unclear and shaky, received little traction due to poor quality and lack of focus. The second reel, while high-quality and well-made, also failed to engage viewers because it lacked audio and people in the video. Navyaa emphasized the importance of capturing attention within the first four seconds of a reel to keep viewers engaged.'
+                },
+                {
+                  title: 'Instagram Content Strategy Workshop',
+                  video: screenRec1,
+                  desc: 'Navyaa presented strategies for creating engaging Instagram content, focusing on product descriptions, visual aesthetics, and storytelling through reels and posts. She emphasized the importance of connecting with audiences through relatable captions, showcasing products in appealing settings, and highlighting the stories behind artisans and products. Participants were encouraged to create reels for their respective centers and share them with Navyaa for feedback. It was agreed that the reels would be shared in a WhatsApp group for broader access, and Navyaa offered to create educational videos for further reference.'
+                }
+              ].map((card, idx) => (
+                <div key={idx} className="bg-gray-50 rounded-xl shadow-md p-4 flex flex-col items-center">
+                  <h4 className="text-lg font-bold text-primary-700 mb-3 text-center">{card.title}</h4>
+                  <div className="w-full aspect-video rounded-lg overflow-hidden mb-3">
+                    <video
+                      src={card.video}
+                      className="w-full h-full object-cover"
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                    />
+                  </div>
+                  <p className="text-gray-700 text-sm text-center">{card.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
       {/* Digital Saheli Partnership Section */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

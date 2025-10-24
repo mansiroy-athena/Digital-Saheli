@@ -1,5 +1,5 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useEffect } from 'react'
+import { Link, useLocation } from 'react-router-dom'
 import bombay1 from '../assets/bombay1.jpg'
 import bombay2 from '../assets/bombay2.jpg'
 import bombay3 from '../assets/bombay3.jpeg'
@@ -27,10 +27,38 @@ import galleryImage8 from '../assets/Image (24).jpg'
 import galleryImage9 from '../assets/Image (25).jpg'
 import mayaImage from '../assets/Maya.png'
 import saktiImage from '../assets/Sakti.png'
+
 import tutorial1 from '../assets/Tutorial 1_Intro to social media marketing.mp4'
 import tutorial2 from '../assets/Tutorial 2_Captions & hashtags.mp4'
 
 const EventsPage = () => {
+  const location = useLocation()
+
+  useEffect(() => {
+    // If there's a hash in the URL (e.g. /events#seva-sadan), scroll to that element.
+    if (location && location.hash) {
+      const id = location.hash.replace('#', '')
+      // Try immediate find first, otherwise fallback after a small delay to allow rendering
+      const scrollToId = () => {
+        const el = document.getElementById(id)
+        if (el) {
+          // focusable element ensures keyboard users can tab to it
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+          try {
+            el.focus({ preventScroll: true })
+          } catch (e) {}
+        }
+      }
+
+      scrollToId()
+      // a small retry in case element wasn't in DOM yet
+      const t = setTimeout(scrollToId, 120)
+      return () => clearTimeout(t)
+    } else {
+      // if no hash, optionally scroll to top
+      // window.scrollTo(0, 0)
+    }
+  }, [location])
   const events = [
     {
       id: 1,
@@ -202,7 +230,7 @@ const EventsPage = () => {
 
           <div className="space-y-4">
             {/* Seva Sadan Workshop */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
+            <div id="seva-sadan" tabIndex={-1} className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
               <div className="flex items-center mb-8">
                 <div className="w-16 h-16 bg-primary-600 rounded-full flex items-center justify-center mr-4">
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -264,14 +292,14 @@ const EventsPage = () => {
                   />
                   <div className="p-4 text-center">
                     <h4 className="font-bold text-gray-900 mb-2 text-lg">Outcome</h4>
-                    <p className="text-gray-700 text-sm leading-relaxed">Women reported increased confidence in promoting their products online and saw a measurable increase in customer engagement.</p>
+                    <p className="text-gray-700 text-sm leading-relaxed">Women reported increased confidence in promoting their products online and saw a significant increase in customer engagement.</p>
                   </div>
                 </div>
               </div>
             </div>
 
             {/* Links Foundation Workshop */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
+            <div id="links-foundation" tabIndex={-1} className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
               <div className="flex items-center mb-8">
                 <div className="w-16 h-16 bg-secondary-600 rounded-full flex items-center justify-center mr-4">
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -294,7 +322,7 @@ const EventsPage = () => {
                   />
                   <div className="p-4 text-center">
                     <h4 className="font-bold text-gray-900 mb-2 text-lg">Focus Strategy</h4>
-                    <p className="text-gray-700 text-sm leading-relaxed">Focused on digital promotion strategies tailored for handmade products and services.</p>
+                    <p className="text-gray-700 text-sm leading-relaxed">Focused on digital strategies tailored for handmade products and services created by migrant worker-cum-entrepreneurs.</p>
                   </div>
                 </div>
 
@@ -320,14 +348,14 @@ const EventsPage = () => {
                   />
                   <div className="p-4 text-center">
                     <h4 className="font-bold text-gray-900 mb-2 text-lg">Outcome</h4>
-                    <p className="text-gray-700 text-sm leading-relaxed">Participants successfully launched Instagram pages for their businesses, connecting with a wider urban audience.</p>
+                    <p className="text-gray-700 text-sm leading-relaxed">Participants launched Instagram pages for their businesses, connecting with a wider urban audience.</p>
                   </div>
                 </div>
               </div>
             </div>
 
             {/* Bombay Foundation Workshop */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
+            <div id="bombay-foundation" tabIndex={-1} className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
               <div className="flex items-center mb-8">
                 <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mr-4">
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -336,12 +364,12 @@ const EventsPage = () => {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-gray-900">Bombay Foundation of deaf women</h3>
+                  <h3 className="text-2xl font-bold text-gray-900">Bombay Foundation of Deaf Women</h3>
                   <p className="text-green-600 font-semibold text-lg">Mumbai</p>
                 </div>
               </div>
               
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
                 {/* Card 1 - Adapted Workshops */}
                 <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl overflow-hidden border border-blue-200">
                   <img 
@@ -364,11 +392,22 @@ const EventsPage = () => {
                   />
                   <div className="p-4 text-center">
                     <h4 className="font-bold text-gray-900 mb-2 text-lg">Training Focus</h4>
-                    <p className="text-gray-700 text-sm leading-relaxed">Reel creation, marketing strategy, and storytelling, including celebrity collaborations (Manushi Chillar and Poonam Singh) for exhibitions and sales.</p>
+                    <p className="text-gray-700 text-sm leading-relaxed"> Provided guidance on identification of target audiences, product positioning, and engagement metrics measurements. Also, tutorials on creating Instagram profiles to analyzing viewership patterns and crafting brand narratives.</p>
                   </div>
                 </div>
-
-                {/* Card 3 - Outcome */}
+                {/* Card 3 - Supporting Exhibition Participation */}
+                <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl overflow-hidden border border-purple-200">
+                  <img 
+                    src={bombay3} 
+                    alt="Increased footfall" 
+                    className="w-full h-48 object-cover"
+                  />
+                  <div className="p-4 text-center">
+                    <h4 className="font-bold text-gray-900 mb-2 text-lg">Supporting Exhibition Participation</h4>
+                    <p className="text-gray-700 text-sm leading-relaxed">Provided support in leading exhibitions like Indian Merchant Chamber’s Ladies’ Wing Women Entrepreneurs’ Exhibition 2025. Created promotional reels for promoting our stall in real time on social media, and supporting the entire crew with stall set-up and highlighting product placement.</p>
+                  </div>
+                </div>
+                {/* Card 4 - Outcome */}
                 <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl overflow-hidden border border-purple-200">
                   <img 
                     src={bombay3} 
@@ -377,7 +416,7 @@ const EventsPage = () => {
                   />
                   <div className="p-4 text-center">
                     <h4 className="font-bold text-gray-900 mb-2 text-lg">Outcome</h4>
-                    <p className="text-gray-700 text-sm leading-relaxed">Footfall at exhibitions increased by 40% post-intervention; women gained skills in content creation and customer engagement.</p>
+                    <p className="text-gray-700 text-sm leading-relaxed">Footfall at exhibitions increased post-intervention. Women entrepreneurs gained skills in content creation and customer engagement.</p>
                   </div>
                 </div>
               </div>
@@ -405,6 +444,31 @@ const EventsPage = () => {
                 </div>
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="relative rounded-xl overflow-hidden shadow-lg">
+                    <video 
+                      className="w-full h-84 object-cover"
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                    >
+                      <source src={tutorial1} type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                  
+                  <div className="relative rounded-xl overflow-hidden shadow-lg">
+                    <video 
+                      className="w-full h-84 object-cover"
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                    >
+                      <source src={tutorial2} type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
                   <div className="relative rounded-xl overflow-hidden shadow-lg">
                     <video 
                       className="w-full h-84 object-cover"
