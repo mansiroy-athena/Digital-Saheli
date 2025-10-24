@@ -157,37 +157,37 @@ const ProjectPartnersPage = () => {
       </section>
        {/* Video Cards Grid (6 cards, 3 per row) */}
           <div className="bg-white rounded-2xl p-8 shadow-lg">
-            <h1 className="text-4xl font-bold text-gray-900 text-center p-8">How to make Instagram Business Account?</h1>
+            <h1 className="text-4xl font-bold text-gray-900 text-center p-8">Zoom Workshops with the 17 Chapter-heads of AIFDW</h1>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {[
                 {
                   title: 'Instagram Business Account Management',
-                  video: screenRec1,
+                  video: 'https://fkhjgxuxq1fvnjxa.public.blob.vercel-storage.com/navya%20portfolio/Zoom%201.mp4',
                   desc: 'Navyaa led a session on creating and managing Instagram business accounts, emphasizing the importance of analytics, community building, and credibility. She demonstrated how to switch an account to a professional business account, highlighting features like insights, ads, and the ability to create an Instagram shop. Participants were instructed to follow along on their own accounts, ensuring they used a business or center account rather than a personal one. Navyaa also explained how to connect a Facebook page for future use and mentioned the benefits of displaying contact information to facilitate customer communication.'
                 },
                 {
                   title: 'Instagram Professional Dashboard Overview',
-                  video: screenRec1,
+                  video: 'https://fkhjgxuxq1fvnjxa.public.blob.vercel-storage.com/navya%20portfolio/Zoom%202.mp4',
                   desc: 'Navyaa explained the professional dashboard features on Instagram, including insights into content performance, follower engagement, and trending audio options. She emphasized the importance of analyzing top-performing content to replicate success and suggested creating a variety of content types initially, such as interviews and educational reels. Mimi shared her experience with having both a personal and business account, and Jude Lewis asked about licensing requirements for selling products in markets, to which Navyaa responded that she was unsure about the specific protocols but confirmed that Instagram sales do not require a license.'
                 },
                 {
                   title: 'Instagram Posting Strategy Best Practices',
-                  video: screenRec1,
+                  video: 'https://fkhjgxuxq1fvnjxa.public.blob.vercel-storage.com/navya%20portfolio/Zoom%203.mp4',
                   desc: 'Navyaa presented information on optimal Instagram posting times and the importance of a consistent posting schedule. She explained that posts should be timed for when users are most active, such as Monday through Friday from 9-11 AM and 6-8 PM, and on weekends from 10 AM to late afternoon. Navyaa emphasized that consistent posting helps prevent Instagram from shadow banning accounts and recommended posting 2-3 times per week using a content calendar.'
                 },
                 {
                   title: 'Instagram Hashtag Strategy Insights',
-                  video: screenRec1,
+                  video: 'https://fkhjgxuxq1fvnjxa.public.blob.vercel-storage.com/navya%20portfolio/Zoom%204.mp4',
                   desc: 'Navyaa explained the importance of hashtags in Instagram posts, describing how they help target content to specific audiences and create community engagement. She demonstrated this with examples, including the use of city-specific hashtags to reach local audiences and relevant hashtags like "cancer awareness" to align with social causes. Navyaa also shared a before-and-after comparison of reels created for a client, inviting participants to discuss the improvements made after working with her team.'
                 },
                 {
                   title: 'Failed Reels: Engagement Insights',
-                  video: screenRec1,
+                  video: 'https://fkhjgxuxq1fvnjxa.public.blob.vercel-storage.com/navya%20portfolio/Zoom%205.mp4',
                   desc: 'Navyaa discussed the effectiveness of two reels promoting an IMC event stall. She explained that the first reel, which was unclear and shaky, received little traction due to poor quality and lack of focus. The second reel, while high-quality and well-made, also failed to engage viewers because it lacked audio and people in the video. Navyaa emphasized the importance of capturing attention within the first four seconds of a reel to keep viewers engaged.'
                 },
                 {
                   title: 'Instagram Content Strategy Workshop',
-                  video: screenRec1,
+                  video: 'https://fkhjgxuxq1fvnjxa.public.blob.vercel-storage.com/navya%20portfolio/Zoom%206.mp4',
                   desc: 'Navyaa presented strategies for creating engaging Instagram content, focusing on product descriptions, visual aesthetics, and storytelling through reels and posts. She emphasized the importance of connecting with audiences through relatable captions, showcasing products in appealing settings, and highlighting the stories behind artisans and products. Participants were encouraged to create reels for their respective centers and share them with Navyaa for feedback. It was agreed that the reels would be shared in a WhatsApp group for broader access, and Navyaa offered to create educational videos for further reference.'
                 }
               ].map((card, idx) => (

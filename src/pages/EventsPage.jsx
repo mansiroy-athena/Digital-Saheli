@@ -477,7 +477,7 @@ const EventsPage = () => {
                       loop
                       playsInline
                     >
-                      <source src={tutorial1} type="video/mp4" />
+                      <source src='https://fkhjgxuxq1fvnjxa.public.blob.vercel-storage.com/navya%20portfolio/Zoom%201.mp4' type="video/mp4" />
                       Your browser does not support the video tag.
                     </video>
                   </div>
@@ -490,7 +490,7 @@ const EventsPage = () => {
                       loop
                       playsInline
                     >
-                      <source src={tutorial2} type="video/mp4" />
+                      <source src='https://fkhjgxuxq1fvnjxa.public.blob.vercel-storage.com/navya%20portfolio/Zoom%203.mp4' type="video/mp4" />
                       Your browser does not support the video tag.
                     </video>
                   </div>
