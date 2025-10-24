@@ -79,7 +79,7 @@ const ProjectPartnersPage = () => {
               <div className="mb-4">
                 <iframe
                   width="100%"
-                  height="200"
+                  height="300"
                   src="https://www.youtube.com/embed/nzBRb7LG_RY"
                   title="Digital Skills Training"
                   frameBorder="0"
